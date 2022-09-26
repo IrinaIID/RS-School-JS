@@ -627,6 +627,11 @@ footer {
     background: var(--accent-gradient);
 }
 
+.form-subscribe button:active {
+    color: #fff;
+    background: var(--active-btn-color);
+}
+
 .footer-bottom-block {
     display: flex;
     justify-content: space-between;
@@ -664,7 +669,11 @@ footer {
 }
 
 .net-item:hover {
-    color: var(--accent-color);
+    color: var(--active-btn-color);
+}
+
+.net-item:hover .logo-net {
+    background: var(--active-btn-color);
 }
 
 .abot-designer-block {
@@ -675,6 +684,11 @@ footer {
 
 .abot-designer-block div {
     padding-bottom: 10px;
+}
+
+.abot-designer-block div:hover {
+    cursor: pointer;
+    color: var(--active-btn-color);
 }
 
 .nav-footer {
