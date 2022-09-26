@@ -1,0 +1,292 @@
+:root {
+    --accent-color: #FE9013;
+    --accent-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    --hover-btn-color: #E47209;
+    --active-btn-color: #4B9200;
+    --pink-gradient: linear-gradient(90deg, rgba(131,58,180,0.3514356426164216) 0%, rgba(253,29,29,0.6931723372942927) 50%, rgba(252,176,69,0.6735644941570378) 100%);
+}
+
+.picture-block-donate{
+    height: 390px;
+    background-image: url(../../assets/images/panda-bg-donate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-back {
+    width: 100vw;
+    padding-bottom: 180px;
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+.main-wrap-d {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.title-donate {
+    font-size: 36px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.text-donate {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #fff;
+    margin: 11px 0 8px 0;
+}
+
+.title-information {
+    color: var(--accent-color);
+    font-size: 36px;
+    padding: 42px 0 63px 0;
+}
+
+.donate-card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.donate-card-wrap {
+    max-width: 976px;
+    margin: auto;
+    padding: 42px 0 62px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donate-card-title {
+    font-size: 48px;
+    color: var(--accent-color);
+}
+
+.donate-card-text {
+    font-size: 24px;
+    color: #333B41;
+    align-self: flex-start;
+    padding-bottom: 35px;
+}
+
+.donate-card-illustration {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.diet-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+    margin-right: 75px;
+}
+
+.diet-number {
+    font-weight: 500;
+    font-size: 72px;
+    margin-left: 45px;
+}
+
+.diet-description {
+    color: #333B41;
+}
+
+.multiple-symbol {
+    position: absolute;
+    left: 155px;
+    top: 119px;
+    font-size: 34px;
+}
+
+.amount-title {
+    align-self: flex-start;
+    padding: 50px 0 16px 0;
+}
+
+.form-donate  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333B41;
+}
+
+.custom-sum-block {
+    position: relative;
+    margin-top: 45px;
+}
+
+.custom-sum-block label {
+    position: absolute;
+    top: 67px;
+    right: 8px;
+    color: #929699;
+    font-weight: 500;
+    font-size: 24px;
+
+}
+
+.donate-custom-sum {
+    box-sizing: border-box;
+    width: 268px;
+    height: 54px;
+    background: none;
+    border-radius: 2px;
+    border: 1px solid #929699;
+    padding-left: 9px;
+    margin: 51px 0 28px 0;
+    outline-color: var(--accent-color);
+}
+
+.chose-period {
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-period-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-period {
+    appearance: none;
+}
+
+.label-period {
+    position: relative;
+    margin-right: 20px;
+    padding-left: 45px;
+}
+
+.label-period:hover {
+    cursor: pointer;
+}
+
+.label-period::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    position: absolute;
+    left: 10px;
+}
+
+.label-period::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFEE2E;
+    position: absolute;
+    border: 1px solid #4B9200;
+    left: 12px;
+    top: 2px;
+    opacity: 0;
+}
+
+.radio-period:checked + .label-period::after {
+    opacity: 1;
+}
+
+.radio-period:checked + .label-period {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.btn-donate-feed {
+    margin: 30px 0 33px 0;
+}
+
+.track-sum-donate {
+    position: relative;
+    width: 976px;
+}
+
+.donate-sum {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1039px;
+}
+
+.radio-sum-pointer {
+    position: relative;
+}
+
+.label-radio-sum {
+    position: absolute;
+    top: 30px;
+    font-weight: 500;
+    font-size: 26px;
+
+}
+
+.label-radio-sum:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+.radio-input {
+    appearance: none;
+}
+
+.label-radio-sum::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FFEE2E;
+    position: absolute;
+    bottom: 47px;
+    left: 29px;
+}
+
+.label-radio-sum::after {
+    content: "";
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: url("../../assets/icons/circules.svg") no-repeat;
+    position: absolute;
+    top: -42px;
+    left: 14px;
+    opacity: 0;
+}
+
+.radio-input:checked + .label-radio-sum::after {
+    opacity: 1;
+}
+
+.radio-input:checked + .label-radio-sum{
+    color: var(--accent-color);
+}
+
+.track-backgroung {
+    position: absolute;
+    top: 4px;
+    z-index: -2;
+    width: 100%;
+    height: 27px;
+    background: #404950;
+}
+
+.track-line {
+    position: absolute;
+    top: 17px;
+    left: 31px;
+    z-index: -1;
+    box-sizing: border-box;
+    width: 915px;
+    height: 2px;
+    background: #72828E;
+}
