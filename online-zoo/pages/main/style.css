@@ -83,6 +83,16 @@ nav li a:hover {
     color: var(--accent-color);
 }
 
+
+@media (max-width: 1280px) {
+    .header-wrap {
+        max-width: 940px;
+    }
+}
+
+
+
+
 .section-watch-animal {
     display: flex;
     justify-content: flex-end;
@@ -150,6 +160,33 @@ nav li a:hover {
     margin-left: 100px;
 }
 
+
+@media (max-width: 1280px) {
+
+    .section-watch-animal {
+    max-width: 940px;
+    overflow: hidden;
+    }
+
+    .circle {
+        width: 367px;
+        height: 367px;
+    }
+
+    .watch-title {
+       font-size: 82px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .section-backstage {
     position: relative;
     width: 100vw;
@@ -200,6 +237,17 @@ h2 {
     font-size: 24px;
     margin: 54px 0 34px 0;
 }
+
+
+
+@media (max-width: 1280px) {
+    .backstage-wrap {
+        max-width: 940px;
+    }
+}
+
+
+
 
 .section-pets {
     position: relative;
@@ -290,7 +338,6 @@ h2 {
     border: 1px solid var(--accent-color)
 }
 
-
 .pet-card:hover {
     cursor: pointer;
 }
@@ -334,6 +381,32 @@ h2 {
 .card-description img {
     padding-right: 13px;
 }
+
+
+@media (max-width: 1280px) {
+    .slider-btn {
+        position: absolute;
+    }
+
+    .pet-card {
+        max-width: 294px;
+        height: 354px;
+    }
+
+    .slider-cover {
+        max-width: 940px;
+    }
+
+    .pets-wrap {
+        width: 940px;
+    }
+
+
+
+}
+
+
+
 
 .section-pick-friend {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -433,6 +506,20 @@ h2 {
 
 .btn-feed {
     margin-top: 63px;
+}
+
+
+@media (max-width: 1280px) {
+
+    .pick-card {
+        max-width: 940px;
+    }
+
+    .pick-text-1,
+    .pick-text-2,
+    .pick-text-3 {
+        padding-left: 10px;
+    }
 }
 
 .section-testimonials {
@@ -571,6 +658,27 @@ h2 {
     align-self: flex-start;
     margin-top: 36px;
 }
+
+
+@media (max-width: 1280px) {
+
+    .testimonials-wrap{
+        max-width: 940px;
+    }
+
+    .testim-card-last {
+        display: none;
+    }
+
+    .testim-card {
+        position: relative;
+        width: 293px;
+        height: 391px;
+    }
+}
+
+
+
 
 footer {
 
