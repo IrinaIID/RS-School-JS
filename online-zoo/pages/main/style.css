@@ -80,6 +80,12 @@ nav li a:hover {
     color: var(--accent-color);
 }
 
+.burger-menu {
+    display: none;
+}
+
+
+
 @media (max-width: 1280px) {
 
     .header-wrap {
@@ -91,6 +97,51 @@ nav li a:hover {
     }
 
 }
+
+
+@media (max-width: 980px) {
+
+    header {
+        position: fixed;
+    }
+
+    .header-wrap {
+        max-width: 600px;
+        padding-top: 2px;
+        justify-content: space-between;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .designed-by {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .burger-menu:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    header {
+       height: 34px;
+    }
+
+    .logo img {
+        width: 47px;
+        height: 29px;
+    }
+
+}
+
+
+
+
 
 
 .wrap-bg-watch-section {
@@ -199,7 +250,23 @@ nav li a:hover {
 
 
 
+@media (max-width: 980px) {
 
+    .section-watch-animal {
+        max-width: 600px;
+    }
+
+    .circle {
+        width: 237px;
+        height: 237px;
+    }
+
+    .watch-title {
+        font-size: 54px;
+        max-width: 255px;
+    }
+
+}
 
 
 
@@ -298,6 +365,23 @@ h2 {
 
 }
 
+
+@media (max-width: 980px) {
+
+    .backstage-wrap img {
+        display: none;
+    }
+
+    .backstage-wrap {
+        max-width: 600px;
+    }
+
+    .backstage-description {
+        max-width: 495px;
+    }
+
+
+}
 
 
 
@@ -465,6 +549,10 @@ h2 {
 
 @media (max-width: 1280px) {
 
+    .pets-wrap {
+        width: 940px;
+    }
+
     .pet-card {
         width: 294px;
         height: 354px;
@@ -473,10 +561,6 @@ h2 {
     .pet-card-photo {
         width: 294px;
         height: 294px;
-    }
-
-    .pets-wrap {
-        width: 940px;
     }
 
     .slider-arrows {
@@ -505,8 +589,47 @@ h2 {
         bottom: -140px;
     }
 
+}
+
+
+
+@media (max-width: 980px) {
+
+    .pets-wrap {
+        width: 600px;
+    }
+
+    .pet-card-right {
+        display: none;
+    }
+
+    .pet-card {
+        width: 285px;
+        height: 332px;
+    }
+
+    .pet-card-photo {
+        width: 285px;
+        height: 285px;
+    }
+
+    .card-text {
+        font-size: 12px;
+    }
+
+    .pet-card-icon-banana {
+        width: 26px;
+        height: 29px;
+    }
+
+    .pet-card-icon-meat {
+        width: 37px;
+        height: 30px;
+    }
 
 }
+
+
 
 
 
@@ -610,7 +733,9 @@ h2 {
     padding-top: 50px;
 }
 
-
+.green-path {
+    display: none;
+}
 
 
 
@@ -657,6 +782,59 @@ h2 {
     .btn-feed {
         padding-top: 71px;
     }
+
+}
+
+
+@media (max-width: 980px) {
+
+    .pick-card {
+        max-width: 640px;
+        padding: 31px 0 50px 0;
+    }
+
+    .pick-titel {
+        font-size: 42px;
+    }
+
+    .pick-text-1 {
+        font-size: 22px;
+    }
+
+    .pick-text-1,
+    .pick-text-2,
+    .pick-text-3 {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 600px;
+    }
+
+    .arrow-path {
+        display: none;
+    }
+
+    .pick-path {
+        position: relative;
+        width: 600px;
+        justify-content: space-between;
+    }
+
+    .green-path-1-1,
+    .green-path-1-2 {
+        display: block;
+        position: absolute;
+    }
+
+    .green-path-1-1 {
+        top: -20px;
+        left: 140px;
+    }
+
+    .green-path-1-2 {
+        top: -20px;
+        left: 360px;
+    }
+
 
 }
 
@@ -844,6 +1022,42 @@ h2 {
 }
 
 
+@media (max-width: 980px) {
+
+    .testimonials-wrap{
+        max-width: 600px;
+    }
+
+    .testimonials-line {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .testim-card {
+        width: 596px;
+        height: 109px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        border: 2px solid rgb(248, 199, 228);
+    }
+
+    .testim-text {
+        max-height: 38px;
+        overflow: hidden;
+    }
+
+    .progress-bar {
+        display: none;
+    }
+
+    .btn-form-feedback {
+        align-self: center;
+    }
+
+}
+
+
+
 
 
 footer {
@@ -934,6 +1148,10 @@ footer {
     padding-left: 0px;
 }
 
+.all-socialnets ul li {
+    list-style-type: none;
+}
+
 .net-item {
     display: flex;
     align-items: center;
@@ -992,4 +1210,50 @@ footer {
         margin-left: 118px;
     }
 
+}
+
+
+@media (max-width: 980px) {
+
+    .logo-footer img{
+        width: 82px;
+        height: 52px;
+    }
+
+    .form-subscribe {
+        display: none;
+    }
+
+    .name-net {
+        display: none;
+    }
+
+    .footer-bottom-block {
+        width: 600px;
+        position: relative;
+    }
+
+    .footer-contacts {
+        position: absolute;
+        right: 20px;
+        bottom: 200px;
+    }
+
+
+
+    .all-socialnets ul li {
+    margin-bottom: 20px;
+    }
+
+    .nav-footer {
+        margin-left: 0;
+    }
+
+    .nav-footer ul {
+        padding-left: 0;
+    }
+
+    nav li {
+        padding-right: 36px;
+    }
 }
