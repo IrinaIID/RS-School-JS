@@ -6,7 +6,8 @@
     --pink-gradient: linear-gradient(90deg, rgba(131,58,180,0.3514356426164216) 0%, rgba(253,29,29,0.6931723372942927) 50%, rgba(252,176,69,0.6735644941570378) 100%);
 }
 
-.picture-block-donate{
+.picture-block-donate {
+    padding-top: 80px;
     height: 390px;
     background-image: url(../../assets/images/panda-bg-donate.jpg);
     background-repeat: no-repeat;
@@ -289,4 +290,102 @@
     width: 915px;
     height: 2px;
     background: #72828E;
+}
+
+@media (max-width: 1280px) {
+
+    .main-back {
+        padding-bottom: 40px;
+    }
+
+    .main-wrap-d {
+        max-width: 940px;
+    }
+
+    .title-donate {
+        max-width: 778px;
+        margin-bottom: 42px;
+    }
+
+    .title-information {
+        padding-bottom: 39px;
+    }
+
+    .donate-card-wrap {
+        padding: 22px 0 39px 0;
+    }
+
+    .donate-card-text {
+        align-self: center;
+        margin-top: 14px;
+    }
+
+    .amount-title {
+        padding-left: 65px;
+    }
+
+    .track-sum-donate {
+        max-width: 810px;
+    }
+
+    .track-line {
+        max-width: 785px;
+        left: 14px;
+    }
+
+    .radio-sum-item-5000 {
+        display: none;
+    }
+
+    .donate-sum {
+        max-width: 908px;
+        margin-left: -17px;
+    }
+
+    .btn-donate-feed {
+        margin: 35px 0 29px 0;
+    }
+
+    .footer-wrap-donate {
+        padding-left: 0px;
+    }
+
+    .btn-form-feedback-donate {
+        margin-top: 23px;
+    }
+
+}
+
+@media (max-width: 980px) {
+
+    .picture-block-donate {
+        height: 335px;
+    }
+
+    .main-wrap-d {
+        max-width: 600px;
+    }
+
+    .title-donate {
+        font-size: 24px;
+    }
+
+    .radio-sum-item-2000,
+    .radio-sum-item-1000 {
+        display: none;
+    }
+
+    .track-sum-donate {
+        max-width: 600px;
+    }
+
+    .track-line {
+        max-width: 524px;
+    }
+
+    .donate-sum {
+        max-width: 657px;
+        margin-left: 10px;
+    }
+
 }

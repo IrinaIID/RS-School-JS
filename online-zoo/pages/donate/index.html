@@ -14,7 +14,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
+        <div class="header-wrap">
+            <h1 class="visually-hidden">PetStory Online</h1>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../../assets/icons/logo-zoo.png" alt="zoo-icon">
+                </a>
+            </div>
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="../../index.html" >About</a></li>
+                    <li><a href="https://www.google.com/maps/">Map</a></li>
+                    <li><a href="#">Zoos</a></li>
+                    <li><a href="pages/donate/index.html" class="nav-a-active">Donate</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"  class="designed-by"> Designed by ©</a></div>
+            <img src="../../assets/icons/burger-menu.png" alt="burger-menu" class="burger-menu">
+        </div>
+    </header>
+
+    <!-- <header>
         <div class="header-wrap">
             <h1 class="visually-hidden">PetStory Online</h1>
             <div class="logo">
@@ -33,7 +56,7 @@
             </nav>
             <div><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"  class="designed-by"> Designed by ©</a></div>
         </div>
-    </header>
+    </header> -->
     <main>
         <div class="picture-block-donate"></div>
         <div class="main-back">
@@ -59,15 +82,15 @@
                                 <div class="track-backgroung"></div>
                                 <div class="track-line"></div>
                                 <div class="donate-sum">
-                                    <div class="radio-sum-item">
+                                    <div class="radio-sum-item radio-sum-item-5000">
                                         <input type="radio" id="5000-sum" name="sum" class="radio-input">
                                         <label for="5000-sum" class="label-radio-sum">&#36; 5000</label>
                                     </div>
-                                    <div class="radio-sum-item">
+                                    <div class="radio-sum-item radio-sum-item-2000">
                                         <input type="radio" id="2000-sum" name="sum" class="radio-input">
                                         <label for="2000-sum" class="label-radio-sum">&#36; 2000</label>
                                     </div>
-                                    <div class="radio-sum-item">
+                                    <div class="radio-sum-item radio-sum-item-1000">
                                         <input type="radio" id="1000-sum" name="sum" class="radio-input" checked>
                                         <label for="1000-sum" class="label-radio-sum">&#36; 1000</label>
                                     </div>
@@ -117,7 +140,7 @@
         </div>
     </main>
     <footer class="footer-donate">
-        <div class="footer-wrap">
+        <div class="footer-wrap footer-wrap-donate">
             <div class="footer-logo-sub-block">
                 <a href="../../index.html" class="logo">
                     <img src="../../assets/icons/logo-zoo.png" alt="zoo-icon">
@@ -128,7 +151,7 @@
                     <button type="submit">Submit</button>
                 </form>
             </div>
-            <form action="pages/donate/index.html" target="_blank" class="btn-form-feedback">
+            <form action="pages/donate/index.html" target="_blank" class="btn-form-feedback btn-form-feedback-donate">
                 <button class="btn btn-feedback">donate for volunteers</button>
             </form>
             <div class="footer-bottom-block">
