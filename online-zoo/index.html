@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="pages/main/style.css">
 </head>
 <body>
-    <div class="img-wrap">
         <header>
             <div class="header-wrap">
                 <h1 class="visually-hidden">PetStory Online</h1>
@@ -22,7 +21,7 @@
                         <img src="assets/icons/logo-zoo.png" alt="zoo-icon">
                     </a>
                 </div>
-                <nav>
+                <nav class="nav-header">
                     <ul>
                         <li><a href="index.html" class="nav-a-active">About</a></li>
                         <li><a href="https://www.google.com/maps/">Map</a></li>
@@ -32,23 +31,30 @@
                     </ul>
                 </nav>
                 <div><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"  class="designed-by"> Designed by ©</a></div>
+                <img src="assets/icons/burger-menu.png" alt="burger-menu" class="burger-menu">
             </div>
         </header>
-        <section class="section-watch-animal">
-            <div class="watch-block">
-                <div class="watch-logo">
-                    <div class="circle"></div>
-                    <div class="watch-title">Watch your <span>favorite</span> animal online</div>
+        <div class="wrap-bg-watch-section">
+            <section class="section-watch-animal">
+                <div class="watch-block">
+                    <div class="watch-logo">
+                        <div class="circle"></div>
+                        <div class="watch-title">Watch your <span>favorite</span> animal online</div>
+                    </div>
+                    <form action="https://explore.org/livecams/panda-bears/china-panda-cam-1" target="_blank" class="btn-watch btn-watch-section-watch">
+                        <button class="btn">watch online</button>
+                    </form>
                 </div>
-                <form action="https://explore.org/livecams/panda-bears/china-panda-cam-1" target="_blank" class="btn-watch">
-                    <button class="btn">watch online</button>
-                </form>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     <main>
        <section class="section-backstage">
+            <form action="https://explore.org/livecams/panda-bears/china-panda-cam-1" target="_blank" class="btn-watch btn-watch-section-backstage">
+                <button class="btn">watch online</button>
+            </form>
            <img src="assets/images/plant-1.png" alt="plant" class="plant-1">
+           <img src="assets/images/plant-1-tablet.png" alt="plant" class="plant-1-tablet">
+           <img src="assets/images/plant-1-mobile.png" alt="plant" class="plant-1-mobile">
            <div class="backstage-wrap">
                 <img src="assets/images/bamboo-cap.jpg" alt="bamboo-cap">
                 <div class="backstage-description">
@@ -61,80 +67,94 @@
        </section>
        <section class="section-pets">
            <img src="assets/images/plant-2.png" alt="plant" class="plant-2">
+           <img src="assets/images/plant-2-small.png" alt="plant" class="plant-2-small">
            <img src="assets/images/plant-3.png" alt="plant" class="plant-3">
+           <img src="assets/images/plant-3-mobile.png" alt="plant" class="plant-3-mobile">
            <div class="slider-cover">
              <div class="slider">
-               <div class="slider-btn arrow-prev">
-                   <img src="assets/icons/prev-slide.png" alt="arrow">
-               </div>
+                <div class="slider-arrows">
+                    <div class="slider-btn arrow-prev">
+                        <img src="assets/icons/prev-slide.png" alt="arrow">
+                    </div>
+                    <div class="slider-btn arrow-next">
+                        <img src="assets/icons/next-slide.png" alt="arrow">
+                    </div>
+                </div>
                 <div class="pets-wrap">
-                    <div class="pets-line-slider">
+                    <div class="pets-line-slider pets-line-slider-first">
                         <div class="pet-card">
-                            <img src="assets/images/pet-panda.jpg" alt="panda">
+                            <img src="assets/images/pet-panda.jpg" alt="panda" class="pet-card-photo">
                             <div class="card-description">
                                 <div class="card-text">
                                     <div class="card-text-title">giant Pandas</div>
                                     <div>Native to Southwest China</div>
                                 </div>
-                                <img src="assets/icons/banana-bamboo-icon.png" alt="banana">
+                                <img src="assets/icons/banana-bamboo-icon.png" alt="banana" class="pet-card-icon pet-card-icon-banana">
                             </div>
                         </div>
                         <div class="pet-card">
-                            <img src="assets/images/pet-eagle.jpg" alt="eagle">
+                            <img src="assets/images/pet-eagle.jpg" alt="eagle" class="pet-card-photo">
                             <div class="card-description">
                                 <div class="card-text">
                                     <div class="card-text-title">Eagles</div>
                                     <div>Native to South America</div>
                                 </div>
-                                <img src="assets/icons/meet-fish-icon.png" alt="meat">
+                                <img src="assets/icons/meet-fish-icon.png" alt="meat" class="pet-card-icon pet-card-icon-meat">
                             </div>
                         </div>
-                        <div class="pet-card">
-                            <img src="assets/images/pet-gorilla.jpg" alt="gorilla">
+                        <div class="pet-card pet-card-right">
+                            <img src="assets/images/pet-gorilla.jpg" alt="gorilla" class="pet-card-photo">
                             <div class="card-description">
                                 <div class="card-text">
                                     <div class="card-text-title">Gorillas</div>
                                     <div>Native to Congo</div>
                                 </div>
-                                <img src="assets/icons/banana-bamboo-icon.png" alt="banana">
+                                <img src="assets/icons/banana-bamboo-icon.png" alt="banana" class="pet-card-iconvpet-card-icon-banana">
+                            </div>
+                        </div>
+                        <div class="pet-card pet-card-4-mobile">
+                            <img src="assets/images/pet-alligator.jpg" alt="alligator" class="pet-card-photo">
+                            <div class="card-description">
+                                <div class="card-text">
+                                    <div class="card-text-title">Alligators</div>
+                                    <div>Native to Southeastern United States</div>
+                                </div>
+                                <img src="assets/icons/meet-fish-icon.png" alt="meat" class="pet-card-icon pet-card-icon-meat">
                             </div>
                         </div>
                     </div>
                     <div class="pets-line-slider second-line">
                         <div class="pet-card">
-                            <img src="assets/images/pet-sloth.jpg" alt="sloth">
+                            <img src="assets/images/pet-sloth.jpg" alt="sloth" class="pet-card-photo">
                             <div class="card-description">
                                 <div class="card-text">
                                     <div class="card-text-title">Two-toed Sloth</div>
                                     <div>Mesoamerica, South America</div>
                                 </div>
-                                <img src="assets/icons/banana-bamboo-icon.png" alt="banana">
+                                <img src="assets/icons/banana-bamboo-icon.png" alt="banana" class="pet-card-icon pet-card-icon-banana">
                             </div>
                         </div>
                         <div class="pet-card">
-                            <img src="assets/images/pet-cheetsts.jpg" alt="cheetahs">
+                            <img src="assets/images/pet-cheetsts.jpg" alt="cheetahs" class="pet-card-photo">
                             <div class="card-description">
                                 <div class="card-text">
                                     <div class="card-text-title">cheetahs</div>
                                     <div>Native to Africa</div>
                                 </div>
-                                <img src="assets/icons/meet-fish-icon.png" alt="meat">
+                                <img src="assets/icons/meet-fish-icon.png" alt="meat" class="pet-card-icon pet-card-icon-meat">
                             </div>
                         </div>
-                        <div class="pet-card">
-                            <img src="assets/images/pet-penguin.jpg" alt="penguin">
+                        <div class="pet-card pet-card-right">
+                            <img src="assets/images/pet-penguin.jpg" alt="penguin" class="pet-card-photo">
                             <div class="card-description">
                                 <div class="card-text">
                                     <div class="card-text-title">Penguins</div>
                                     <div>Native to Antarctica</div>
                                 </div>
-                                <img src="assets/icons/meet-fish-icon.png" alt="meat">
+                                <img src="assets/icons/meet-fish-icon.png" alt="meat" class="pet-card-icon pet-card-icon-meat">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="slider-btn arrow-next">
-                    <img src="assets/icons/next-slide.png" alt="arrow">
                 </div>
             </div>
            </div>
@@ -150,6 +170,10 @@
                <p class="pick-text-3">Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider a gift to our <a href="pages/donate/index.html">Emergency Support Fund</a> .</p>
                <div class="pick-qustion">How it works</div>
                <div class="pick-path">
+                   <img src="assets/icons/green-path-arrow-1.png" alt="arrow" class="green-path green-path-1-1">
+                   <img src="assets/icons/green-path-arrow-1.png" alt="arrow" class="green-path green-path-1-2">
+                   <img src="assets/icons/green-path-arrow-2.png" alt="arrow" class="green-path green-path-2-1">
+                   <img src="assets/icons/green-path-arrow-2.png" alt="arrow" class="green-path green-path-2-2">
                     <div class="pick-block">
                         <div class="pick-icon">
                             <img src="assets/icons/pay.png" alt="pay">
@@ -164,7 +188,7 @@
                         <div>Payment goes to the zoo</div>
                     </div>
                     <img src="assets/icons/arrow-path.png" alt="arrow" class="arrow-path">
-                    <div class="pick-block">
+                    <div class="pick-block pick-block-monkey">
                         <div class="pick-icon">
                             <img src="assets/icons/monkey.png" alt="monkey">
                         </div>
@@ -236,7 +260,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="testim-card">
+                    <div class="testim-card testim-card-last">
                         <div class="testim-card-content">
                             <div class="testim-id">
                                 <img src="assets/icons/mila-icon.png" alt="user">
@@ -267,8 +291,11 @@
     <footer class="footer-main">
         <div class="footer-wrap">
             <div class="footer-logo-sub-block">
-                <a href="index.html" class="logo">
-                    <img src="assets/icons/logo-zoo.png" alt="zoo-icon">
+                <a href="index.html" class="logo logo-footer">
+                    <img src="assets/icons/logo-zoo.png" alt="zoo-icon" class="logo-icon">
+                </a>
+                <a href="index.html" class="logo-footer-mobile">
+                    <img src="assets/icons/logo-footer-mobile.png" alt="zoo-icon" class="logo-icon">
                 </a>
                 <form action="#" class="form-subscribe">
                     <label for="user-email">Subscribe to our news</label>
@@ -277,7 +304,7 @@
                 </form>
             </div>
             <form action="pages/donate/index.html" target="_blank" class="btn-form-feedback">
-                <button class="btn btn-feedback">donate for volunteers</button>
+                <button class="btn btn-feedback btn-footer">donate for volunteers</button>
             </form>
             <div class="footer-bottom-block">
                 <div class="footer-contacts">
@@ -315,7 +342,7 @@
                         <li><a href="index.html" class="nav-a-active">About</a></li>
                         <li><a href="https://www.google.com/maps/">Map</a></li>
                         <li><a href="#">Zoos</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li class="li-contact-us"><a href="#">Contact&nbsp;us</a></li>
                     </ul>
                 </nav>
                 <div class="abot-designer-block">

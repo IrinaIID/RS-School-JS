@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <div class="header-wrap">
             <h1 class="visually-hidden">PetStory Online</h1>
@@ -22,16 +23,17 @@
                     <img src="../../assets/icons/logo-zoo.png" alt="zoo-icon">
                 </a>
             </div>
-            <nav>
+            <nav class="nav-header">
                 <ul>
-                    <li><a href="../../index.html">About</a></li>
+                    <li><a href="../../index.html" >About</a></li>
                     <li><a href="https://www.google.com/maps/">Map</a></li>
                     <li><a href="#">Zoos</a></li>
-                    <li><a href="index.html" class="nav-a-active">Donate</a></li>
+                    <li><a href="pages/donate/index.html" class="nav-a-active">Donate</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
             </nav>
             <div><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"  class="designed-by"> Designed by ©</a></div>
+            <img src="../../assets/icons/burger-menu.png" alt="burger-menu" class="burger-menu">
         </div>
     </header>
     <main>
@@ -59,37 +61,37 @@
                                 <div class="track-backgroung"></div>
                                 <div class="track-line"></div>
                                 <div class="donate-sum">
-                                    <div class="radio-sum-item">
+                                    <div class="radio-sum-item radio-sum-item-5000">
                                         <input type="radio" id="5000-sum" name="sum" class="radio-input">
                                         <label for="5000-sum" class="label-radio-sum">&#36; 5000</label>
                                     </div>
-                                    <div class="radio-sum-item">
+                                    <div class="radio-sum-item radio-sum-item-2000">
                                         <input type="radio" id="2000-sum" name="sum" class="radio-input">
                                         <label for="2000-sum" class="label-radio-sum">&#36; 2000</label>
                                     </div>
-                                    <div class="radio-sum-item">
+                                    <div class="radio-sum-item radio-sum-item-1000">
                                         <input type="radio" id="1000-sum" name="sum" class="radio-input" checked>
                                         <label for="1000-sum" class="label-radio-sum">&#36; 1000</label>
                                     </div>
                                     <div class="radio-sum-item">
                                         <input type="radio" id="500-sum" name="sum" class="radio-input">
-                                        <label for="500-sum" class="label-radio-sum">&#36; 500</label>
+                                        <label for="500-sum" class="label-radio-sum label-radio-sum-500">&#36; 500</label>
                                     </div>
                                     <div class="radio-sum-item">
                                         <input type="radio" id="250-sum" name="sum" class="radio-input">
-                                        <label for="250-sum" class="label-radio-sum">&#36; 250</label>
+                                        <label for="250-sum" class="label-radio-sum label-radio-sum-250">&#36; 250</label>
                                     </div>
                                     <div class="radio-sum-item">
                                         <input type="radio" id="100-sum" name="sum" class="radio-input">
-                                        <label for="100-sum" class="label-radio-sum">&#36; 100</label>
+                                        <label for="100-sum" class="label-radio-sum label-radio-sum-100">&#36; 100</label>
                                     </div>
                                     <div class="radio-sum-item">
                                         <input type="radio" id="50-sum" name="sum" class="radio-input">
-                                        <label for="50-sum" class="label-radio-sum">&#36; 50</label>
+                                        <label for="50-sum" class="label-radio-sum label-radio-sum-50">&#36; 50</label>
                                     </div>
                                     <div class="radio-sum-item">
                                         <input type="radio" id="25-sum" name="sum" class="radio-input">
-                                        <label for="25-sum" class="label-radio-sum">&#36; 25</label>
+                                        <label for="25-sum" class="label-radio-sum label-radio-sum-25">&#36; 25</label>
                                     </div>
                                     <div class></div>
                                 </div>
@@ -110,30 +112,33 @@
                             </div>
                             <button class="btn btn-donate-feed">Feed a friend now</button>
                         </form>
-                        <div>Share with your friends on social networks</div>
+                        <div class="text-card-d-share">Share with your friends on social networks</div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer class="footer-donate">
-        <div class="footer-wrap">
-            <div class="footer-logo-sub-block">
-                <a href="../../index.html" class="logo">
+        <div class="footer-wrap footer-wrap-donate">
+            <div class="footer-logo-sub-block footer-logo-sub-block-d">
+                <a href="../../index.html" class="logo logo-footre-d">
                     <img src="../../assets/icons/logo-zoo.png" alt="zoo-icon">
                 </a>
-                <form action="#" class="form-subscribe">
+                <a href="../../index.html" class="logo-footer-mobile">
+                    <img src="../../assets/icons/logo-footer-mobile.png" alt="zoo-icon" class="logo-icon">
+                </a>
+                <form action="../../index.html" class="form-subscribe">
                     <label for="user-email">Subscribe to our news</label>
                     <input type="email" id="user-email" placeholder="Enter your email" required>
                     <button type="submit">Submit</button>
                 </form>
             </div>
-            <form action="pages/donate/index.html" target="_blank" class="btn-form-feedback">
-                <button class="btn btn-feedback">donate for volunteers</button>
+            <form action="#" target="_blank" class="btn-form-feedback btn-form-feedback-donate">
+                <button class="btn btn-feedback btn-footer-d">donate for volunteers</button>
             </form>
-            <div class="footer-bottom-block">
-                <div class="footer-contacts">
-                    <div class="all-socialnets">
+            <div class="footer-bottom-block footer-bottom-block-d">
+                <div class="footer-contacts footer-contacts-d">
+                    <div class="all-socialnets all-socialnets-d">
                         <ul>
                             <li><a href="https://ru-ru.facebook.com/" class="net-item">
                                 <div class="logo-net">
@@ -167,7 +172,7 @@
                         <li><a href="../../index.html">About</a></li>
                         <li><a href="https://www.google.com/maps/">Map</a></li>
                         <li><a href="#">Zoos</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li class="li-contact-us"><a href="#">Contact&nbsp;us</a></li>
                     </ul>
                 </nav>
                 <div class="abot-designer-block">
