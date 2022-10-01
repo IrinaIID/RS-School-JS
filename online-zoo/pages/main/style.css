@@ -308,6 +308,10 @@ nav li a:hover {
         max-width: 128px;
     }
 
+    .btn-watch-section-watch {
+        display: none;
+    }
+
 }
 
 
@@ -1361,6 +1365,12 @@ h2 {
         margin-top: 12px;
     }
 
+    .plant-4 {
+        bottom: -145px;
+        width: 111px;
+        height: 200px;
+    }
+
 }
 
 
@@ -1568,7 +1578,7 @@ footer {
     .logo-footer img{
         width: 82px;
         height: 52px;
-        margin-left: -6px;
+        margin-left: 0px;
     }
 
     .footer-logo-sub-block {
@@ -1581,7 +1591,7 @@ footer {
     }
 
     .btn-footer {
-        margin-left: -6px;
+        margin-left: 0px;
         margin-bottom: 51px;
     }
 
@@ -1597,7 +1607,7 @@ footer {
 
     .footer-contacts {
         position: absolute;
-        right: -5px;
+        right: -12px;
         bottom: 89px;
     }
 

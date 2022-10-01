@@ -258,6 +258,7 @@
     width: 42px;
     height: 42px;
     background: url("../../assets/icons/circules.svg") no-repeat;
+    background-size: cover;
     position: absolute;
     top: -42px;
     left: 14px;
@@ -360,6 +361,11 @@
 
     .picture-block-donate {
         height: 335px;
+        padding-top: 34px;
+    }
+
+    .main-back {
+        padding-bottom: 47px;
     }
 
     .main-wrap-d {
@@ -368,6 +374,26 @@
 
     .title-donate {
         font-size: 24px;
+        padding-top: 32px;
+        margin-bottom: 21px;
+    }
+
+    .title-information {
+        padding: 23px 0 33px 0;
+    }
+
+    .donate-card-wrap {
+        padding: 33px 0px 34px 0px;
+    }
+
+    .donate-card-text {
+        margin-top: 24px;
+        text-align: center;
+        padding-bottom: 27px;
+    }
+
+    .amount-title {
+        padding: 41px 0 5px 10px;
     }
 
     .radio-sum-item-2000,
@@ -377,15 +403,208 @@
 
     .track-sum-donate {
         max-width: 600px;
+        padding-bottom: 50px;
+        overflow-x: hidden;
+        overflow-y: visible;
     }
 
     .track-line {
-        max-width: 524px;
+        max-width: 517px;
+        left: 42px;
     }
 
     .donate-sum {
-        max-width: 657px;
-        margin-left: 10px;
+        max-width: 651px;
+        margin-left: 5px;
     }
+
+    .custom-sum-block {
+        margin-top: 0px;
+    }
+
+    .custom-sum-block label {
+        top: 61px;
+    }
+
+    .donate-custom-sum {
+        width: 180px;
+        height: 42px;
+        margin: 51px 0 33px 0;
+    }
+
+    .btn-donate-feed {
+        margin: 31px 0 29px 0;
+    }
+
+    .logo-footre-d img {
+        width: 82px;
+        height: 52px;
+    }
+
+    .footer-logo-sub-block-d {
+        margin-bottom: -9px;
+    }
+
+    .footer-bottom-block-d {
+        padding-top: 75px;
+    }
+
+    .footer-contacts-d {
+        right: -12px;
+        bottom: 87px;
+    }
+
+}
+
+
+@media (max-width: 635px) {
+
+    .picture-block-donate {
+        height: 187px;
+    }
+
+    .main-wrap-d {
+        max-width: 300px;
+    }
+
+    .main-back {
+        padding-bottom: 12px;
+    }
+
+    .title-information {
+        font-size: 24px;
+    }
+
+    .donate-card-wrap {
+        padding: 19px 0px 34px 0px;
+    }
+
+    .donate-card-title {
+        font-size: 24px;
+    }
+
+    .donate-card-text {
+        font-size: 16px;
+        margin: 14px 0 0 0;
+        padding-bottom: 7px;
+    }
+
+    .donate-card-illustration img {
+        width: 160px;
+        height: 138px;
+        padding-top: 7px;
+    }
+
+    .diet-block {
+        margin-right: 48px;
+    }
+
+    .diet-description {
+        font-size: 9px;
+        max-width: 100px;
+        text-align: center;
+    }
+
+    .diet-number {
+        font-size: 42px;
+        margin-left: 29px;
+    }
+
+    .multiple-symbol {
+        left: 94px;
+        top: 73px;
+        font-size: 20px;
+    }
+
+    .amount-title {
+        padding: 6px 0 5px 0px;
+    }
+
+    .track-sum-donate {
+        max-width: 300px;
+    }
+
+    .donate-sum {
+        max-width: 324px;
+        margin-left: -10px;
+        margin-top: 2px;
+    }
+
+    .track-backgroung {
+        height: 13.5px;
+    }
+
+    .track-line {
+        max-width: 262px;
+        top: 11px;
+        left: 20px;
+    }
+
+    .label-radio-sum {
+        font-size: 13px;
+    }
+
+    .label-radio-sum::before {
+        width: 5px;
+        height: 5px;
+        bottom: 32px;
+        left: 11px;
+    }
+
+
+    .label-radio-sum {
+        margin-left: 20px;
+    }
+
+    .label-radio-sum::after {
+        width: 22px;
+        height: 22px;
+        top: -31px;
+        left: 2px;
+    }
+
+    .donate-custom-sum {
+        margin: -3px 0 25px 0;
+    }
+
+    .custom-sum-block label {
+        top: 7px;
+    }
+
+    .text-card-d-share {
+        font-size: 15.9px;
+    }
+
+    .logo-footre-d {
+        display: none;
+    }
+
+    .btn-form-feedback-donate {
+        margin-top: 86px;
+    }
+
+    .btn-footer-d {
+        width: 298px;
+    }
+
+    .all-socialnets-d ul {
+        top: -177px;
+        left: -284px;
+    }
+
+    .footer-contacts-d {
+        right: 6px;
+    }
+
+    .footer-contacts-d {
+        right: -12px;
+        bottom: 87px;
+    }
+
+    .all-socialnets-d ul {
+        top: -184px;
+        left: -278px;
+    }
+
 
 }
