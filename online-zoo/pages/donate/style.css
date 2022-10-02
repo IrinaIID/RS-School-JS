@@ -351,6 +351,10 @@
         padding-left: 0px;
     }
 
+    /* .nav-footer-d {
+        margin-left: 131px
+    } */
+
     .btn-form-feedback-donate {
         margin-top: 23px;
     }
@@ -452,6 +456,10 @@
     .footer-contacts-d {
         right: -12px;
         bottom: 87px;
+    }
+
+    .btn-footer-d {
+        width: 298px;
     }
 
 }

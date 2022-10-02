@@ -780,7 +780,6 @@ h2 {
 
     .section-pets {
         margin-top: 51px;
-        margin-right: 16px;
     }
 
     .slider {
@@ -815,10 +814,6 @@ h2 {
         margin-bottom: 5px;
     }
 
-    .btn-favorive {
-        margin-left: 14px;
-    }
-
     .plant-2 {
         width: 65px;
         height: 76px;
@@ -832,7 +827,7 @@ h2 {
     .plant-3-mobile {
         display: block;
         position: absolute;
-        right: -15px;
+        right: 0px;
         bottom: -64px;
     }
 
@@ -850,7 +845,7 @@ h2 {
     opacity: 0.9;
     width: 100%;
     margin-top: 100px;
-    padding: 69px 0 100px 0;
+    padding: 69px 0 109px 0;
 }
 
 .pick-card {
@@ -1356,6 +1351,10 @@ h2 {
         align-self: center;
     }
 
+    .btn-feedback {
+        width: 240px;
+    }
+
     .testimonials-titel {
         margin-top: 62px;
     }
@@ -1409,7 +1408,7 @@ footer {
 }
 
 .footer-main {
-    margin-top: 177px;
+    margin-top: 180px;
 }
 
 .footer-wrap {
@@ -1545,7 +1544,6 @@ footer {
 
     .footer-wrap {
         max-width: 940px;
-        padding-left: 26px;
     }
 
     .form-subscribe {
@@ -1591,6 +1589,7 @@ footer {
     }
 
     .btn-footer {
+        width: 298px;
         margin-left: 0px;
         margin-bottom: 51px;
     }
