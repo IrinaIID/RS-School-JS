@@ -646,6 +646,7 @@ h2 {
 }
 
 
+
 @media (max-width: 1360px) {
 
     .pets-line-slider-first {
@@ -704,6 +705,7 @@ h2 {
         left: 0;
         bottom: -140px;
     }
+
 
 }
 
@@ -1108,8 +1110,13 @@ h2 {
         margin-bottom: 10px;
     }
 
+    .pick-block-monkey {
+        margin-right: 0px;
+        margin-top: 5px;
+    }
+
     .btn-feed {
-        margin-top: -19px;
+        margin-top: -25px;
     }
 
     .green-path-1-1,
