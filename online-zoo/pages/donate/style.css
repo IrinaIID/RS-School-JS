@@ -12,6 +12,7 @@
     background-image: url(../../assets/images/panda-bg-donate.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .main-back {
@@ -351,9 +352,9 @@
         padding-left: 0px;
     }
 
-    /* .nav-footer-d {
-        margin-left: 131px
-    } */
+    .nav-footer-d {
+        margin-left: 130px;
+    }
 
     .btn-form-feedback-donate {
         margin-top: 23px;
@@ -453,6 +454,10 @@
         padding-top: 75px;
     }
 
+    .nav-footer-d {
+        margin-left: 0px;
+    }
+
     .footer-contacts-d {
         right: -12px;
         bottom: 87px;
@@ -476,7 +481,7 @@
     }
 
     .main-back {
-        padding-bottom: 12px;
+        padding-bottom: 20px;
     }
 
     .title-information {
@@ -484,7 +489,7 @@
     }
 
     .donate-card-wrap {
-        padding: 19px 0px 34px 0px;
+        padding: 19px 0px 26px 0px;
     }
 
     .donate-card-title {
@@ -589,6 +594,7 @@
 
     .btn-form-feedback-donate {
         margin-top: 86px;
+        margin-left: 10px;
     }
 
     .btn-footer-d {
@@ -600,6 +606,10 @@
         left: -284px;
     }
 
+    .footer-wrap-donate {
+        max-width: 320px;
+    }
+
     .footer-contacts-d {
         right: 6px;
     }
@@ -609,9 +619,13 @@
         bottom: 87px;
     }
 
+    .nav-footer-d {
+        margin-left: 13px;
+    }
+
     .all-socialnets-d ul {
         top: -184px;
-        left: -278px;
+        left: -268px;
     }
 
 
