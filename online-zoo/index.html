@@ -7,12 +7,32 @@
     <title>Online-zoo</title>
     <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="pages/main/style.css">
+    <link rel="stylesheet" href="assets/styles/styles-for-js.css">
 </head>
 <body>
+    <div class="popup-menu-all">
+        <div class="pop-menu-wrap">
+            <div class="pop-menu">
+                <img src="assets/icons/logo-burgrer.png" alt="logo">
+                <nav class="pop-nav">
+                    <ul>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="https://www.google.com/maps/">Map</a></li>
+                        <li><a href="#">Zoos</a></li>
+                        <li><a href="pages/donate/index.html">Donate</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"> Designed by ©</a></li>
+                    </ul>
+                </nav>
+                <div class="pop-close">&#215;</div>
+            </div>
+        </div>
+    </div>
         <header>
             <div class="header-wrap">
                 <h1 class="visually-hidden">PetStory Online</h1>
@@ -280,7 +300,7 @@
                     </div>
             </div>
             <div class="progress-bar">
-                <div class="progress-line"></div>
+                <input type="range" name="range" min="0" max="7" value="0" class="progress-input">
             </div>
             <form action="#" target="_blank" class="btn-form-feedback">
                 <button class="btn btn-feedback">leave feedback</button>
