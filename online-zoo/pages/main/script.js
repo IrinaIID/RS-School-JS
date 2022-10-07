@@ -20,3 +20,19 @@ window.addEventListener('click', function(event) {
     }
 });
 
+
+
+// Slider Testimonials
+
+const testimLine = document.querySelector('.testimonials-line');
+const testimRange = document.querySelector('.progress-input');
+
+
+testimRange.addEventListener('click', function() {
+    console.log(testimRange.value)
+    let currentTransform = testimRange.value * -293;
+    testimLine.style.transform = `translateX(${currentTransform}px)`;
+});
+
+
+// Pop-up Testimonials
