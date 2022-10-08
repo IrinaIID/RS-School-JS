@@ -29,8 +29,8 @@ body {
 .pop-menu-wrap {
     display: block;
     max-width: 640px;
-    animation-name: popup-burger;
-    animation-duration: 1s;
+    /* animation-name: popup-burger;
+    animation-duration: 1s; */
 }
 
 .pop-menu {
@@ -75,3 +75,98 @@ body {
     transform: scale(1.3);
 }
 
+
+
+
+
+.popup-testim-all {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000ab;
+    z-index: 7;
+
+}
+
+.on-popup-testim-all {
+    display: block;
+}
+
+.pop-testim-wrap {
+    position: relative;
+    display: none;
+    display: flex;
+    max-width: 320px;
+    /* height: 428px; */
+    background-color: #F5F7F6;
+    margin: auto;
+}
+
+
+.pop-testim-card {
+    display: none;
+    position: relative;
+    width: 268px;
+    height: 391px;
+    background-color: #F1F3F2;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 213, 246);
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+.pop-testim-card-content {
+    padding: 15px 15px 19px 16px;
+}
+
+.pop-testim-id {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.pop-testim-info-user {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.pop-testim-loc-and-time {
+    display: flex;
+    align-items: center;
+}
+
+.pop-testim-dot {
+    margin: 0 5px 0 6px;
+    color: #BDBDBD;
+}
+
+.pop-testim-location,
+.pop-testim-time {
+    font-weight: 300;
+    font-size: 15px;
+    color: #BDBDBD;
+}
+
+.pop-testim-text {
+    color: #767474;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.pop-testim-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 32px;
+    color: #ffb56f;
+}
+
+.pop-testim-close:hover {
+    cursor: pointer;
+}
+
+.on-testim-card {
+    display: block;
+}

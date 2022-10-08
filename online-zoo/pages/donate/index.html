@@ -15,7 +15,24 @@
     <link rel="stylesheet" href="../../assets/styles/styles-for-js.css">
 </head>
 <body>
-
+    <div class="popup-menu-all">
+        <div class="pop-menu-wrap">
+            <div class="pop-menu">
+                <img src="../../assets/icons/logo-burgrer.png" alt="logo">
+                <nav class="pop-nav">
+                    <ul>
+                        <li><a href="../../index.html">About</a></li>
+                        <li><a href="https://www.google.com/maps/">Map</a></li>
+                        <li><a href="#">Zoos</a></li>
+                        <li><a href="index.html">Donate</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"> Designed by ©</a></li>
+                    </ul>
+                </nav>
+                <div class="pop-close">&#215;</div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="header-wrap">
             <h1 class="visually-hidden">PetStory Online</h1>
@@ -63,42 +80,42 @@
                                 <div class="track-line"></div>
                                 <div class="donate-sum">
                                     <div class="radio-sum-item radio-sum-item-5000">
-                                        <input type="radio" id="5000-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="5000-sum" name="sum" class="radio-input" value="5000">
                                         <label for="5000-sum" class="label-radio-sum">&#36; 5000</label>
                                     </div>
                                     <div class="radio-sum-item radio-sum-item-2000">
-                                        <input type="radio" id="2000-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="2000-sum" name="sum" class="radio-input" value="2000">
                                         <label for="2000-sum" class="label-radio-sum">&#36; 2000</label>
                                     </div>
                                     <div class="radio-sum-item radio-sum-item-1000">
-                                        <input type="radio" id="1000-sum" name="sum" class="radio-input" checked>
+                                        <input type="radio" id="1000-sum" name="sum" class="radio-input" value="1000">
                                         <label for="1000-sum" class="label-radio-sum">&#36; 1000</label>
                                     </div>
                                     <div class="radio-sum-item">
-                                        <input type="radio" id="500-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="500-sum" name="sum" class="radio-input" value="500">
                                         <label for="500-sum" class="label-radio-sum label-radio-sum-500">&#36; 500</label>
                                     </div>
                                     <div class="radio-sum-item">
-                                        <input type="radio" id="250-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="250-sum" name="sum" class="radio-input" value="250">
                                         <label for="250-sum" class="label-radio-sum label-radio-sum-250">&#36; 250</label>
                                     </div>
                                     <div class="radio-sum-item">
-                                        <input type="radio" id="100-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="100-sum" name="sum" class="radio-input" value="100" checked>
                                         <label for="100-sum" class="label-radio-sum label-radio-sum-100">&#36; 100</label>
                                     </div>
                                     <div class="radio-sum-item">
-                                        <input type="radio" id="50-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="50-sum" name="sum" class="radio-input" value="50">
                                         <label for="50-sum" class="label-radio-sum label-radio-sum-50">&#36; 50</label>
                                     </div>
                                     <div class="radio-sum-item">
-                                        <input type="radio" id="25-sum" name="sum" class="radio-input">
+                                        <input type="radio" id="25-sum" name="sum" class="radio-input" value="25">
                                         <label for="25-sum" class="label-radio-sum label-radio-sum-25">&#36; 25</label>
                                     </div>
                                     <div class></div>
                                 </div>
                             </div>
                             <div class="custom-sum-block">
-                                <input type="number" max="9999" class="donate-custom-sum" id="custom-sum" placeholder="Another amount">
+                                <input type="number" oninput="if(value.length > 4) value = value.slice(0,4)" class="donate-custom-sum" id="custom-sum" placeholder="Another amount" value="100">
                                 <label for="custom-sum">&#36;</label>
                             </div>
                             <div class="chose-period">
@@ -183,5 +200,7 @@
             </div>
         </div>
     </footer>
+    <script src="../main/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

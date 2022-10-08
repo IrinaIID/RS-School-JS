@@ -1238,6 +1238,7 @@ h2 {
     font-size: 15px;
     font-weight: 300;
     line-height: 19px;
+    /* overflow: hidden; */
 }
 
 .progress-bar {
