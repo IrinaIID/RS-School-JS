@@ -85,7 +85,6 @@ nav li a:hover {
 }
 
 
-
 @media (max-width: 1280px) {
 
     .header-wrap {
@@ -146,6 +145,7 @@ nav li a:hover {
     }
 
 }
+
 
 .wrap-bg-watch-section {
     background-image: url(../../assets/images/panda-bg.jpg);
@@ -251,8 +251,6 @@ nav li a:hover {
 
 }
 
-
-
 @media (max-width: 980px) {
 
     .section-watch-animal {
@@ -283,9 +281,7 @@ nav li a:hover {
         margin: 0;
         left: -346px;
         top: 195px;
-
     }
-
 }
 
 @media (max-width: 635px) {
@@ -313,10 +309,6 @@ nav li a:hover {
     }
 
 }
-
-
-
-
 
 
 .section-backstage {
@@ -388,7 +380,6 @@ h2 {
 }
 
 
-
 @media (max-width: 1550px) {
 
     .plant-1 {
@@ -400,7 +391,6 @@ h2 {
     }
 
 }
-
 
 @media (max-width: 1280px) {
 
@@ -422,7 +412,6 @@ h2 {
     }
 
 }
-
 
 @media (max-width: 980px) {
 
@@ -455,7 +444,6 @@ h2 {
     }
 
 }
-
 
 @media (max-width: 635px) {
 
@@ -493,7 +481,6 @@ h2 {
     }
 
 }
-
 
 
 .section-pets {
@@ -561,9 +548,19 @@ h2 {
     margin: auto;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+}
+
+.line-1,
+.line-2 {
+    height: 446px;
+    position: relative;
 }
 
 .pets-line-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -646,7 +643,6 @@ h2 {
 }
 
 
-
 @media (max-width: 1360px) {
 
     .pets-line-slider-first {
@@ -660,6 +656,10 @@ h2 {
 
     .section-pets {
         margin-top: 153px;
+    }
+
+    .line-1, .line-2 {
+        height: 513px;
     }
 
 }
@@ -706,10 +706,11 @@ h2 {
         bottom: -140px;
     }
 
+    .line-1, .line-2 {
+        height: 446px;
+    }
 
 }
-
-
 
 @media (max-width: 980px) {
 
@@ -777,7 +778,6 @@ h2 {
 
 }
 
-
 @media (max-width: 635px) {
 
     .section-pets {
@@ -833,14 +833,10 @@ h2 {
         bottom: -64px;
     }
 
-
-
+    .line-1, .line-2 {
+        height: 708px;
+    }
 }
-
-
-
-
-
 
 .section-pick-friend {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -947,8 +943,6 @@ h2 {
 }
 
 
-
-
 @media (max-width: 1280px) {
 
     .section-pick-friend {
@@ -993,7 +987,6 @@ h2 {
     }
 
 }
-
 
 @media (max-width: 980px) {
 
@@ -1065,9 +1058,7 @@ h2 {
         padding-top: 42px;
     }
 
-
 }
-
 
 @media (max-width: 635px) {
 
@@ -1138,12 +1129,7 @@ h2 {
         right: 35px;
     }
 
-
-
 }
-
-
-
 
 
 .section-testimonials {
@@ -1179,7 +1165,6 @@ h2 {
     align-self: flex-start;
     transition: 1s;
 }
-
 
 .testim-card {
     position: relative;
@@ -1238,7 +1223,6 @@ h2 {
     font-size: 15px;
     font-weight: 300;
     line-height: 19px;
-    /* overflow: hidden; */
 }
 
 .progress-bar {
@@ -1301,11 +1285,6 @@ h2 {
         margin-bottom: 32px;
     }
 
-
-    /* .testim-card-last {
-        display: none;
-    } */
-
     .testim-card {
         position: relative;
         width: 268px;
@@ -1332,7 +1311,6 @@ h2 {
     }
 
 }
-
 
 @media (max-width: 980px) {
 
@@ -1394,7 +1372,6 @@ h2 {
 
 }
 
-
 @media (max-width: 635px) {
 
     .testimonials-wrap {
@@ -1425,7 +1402,6 @@ h2 {
 
 
 footer {
-
     background: #111115;
 }
 
@@ -1551,11 +1527,9 @@ footer {
     margin-left: 225px;
 }
 
-
 .logo-footer-mobile {
     display: none;
 }
-
 
 
 @media (max-width: 1280px) {
@@ -1581,7 +1555,6 @@ footer {
     }
 
 }
-
 
 @media (max-width: 980px) {
 
