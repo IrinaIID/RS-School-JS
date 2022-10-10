@@ -142,6 +142,12 @@
     padding-left: 9px;
     margin: 51px 0 28px 0;
     outline-color: var(--accent-color);
+
+}
+
+.donate-custom-sum::-webkit-outer-spin-button,
+.donate-custom-sum::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .chose-period {
