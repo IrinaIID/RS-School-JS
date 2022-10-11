@@ -24,13 +24,12 @@ window.addEventListener('click', function(event) {
 
 // Slider Testimonials
 
+const progressInput = document.querySelector('.progress-input');
 const testimLine = document.querySelector('.testimonials-line');
-const testimRange = document.querySelector('.progress-input');
-const testimProgress = document.querySelector('.progress-bar')
 
-testimProgress.addEventListener('click', function() {
-    let currentTransform = testimRange.value * -293;
-    testimLine.style.transform = `translateX(${currentTransform}px)`;
+progressInput.addEventListener('change', function() {
+    let currentTransform = progressInput.value * -293;
+    testimLine.style.transform = `translateX(${currentTransform}px)`
 });
 
 

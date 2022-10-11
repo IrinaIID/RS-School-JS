@@ -1291,6 +1291,15 @@ h2 {
         height: 391px;
     }
 
+    .testimonials-line {
+        width: 2990px;
+
+    }
+
+    .testim-card-last {
+        display: none;
+    }
+
     .progress-bar {
         width: 390px;
     }
