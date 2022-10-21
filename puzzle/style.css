@@ -1,0 +1,74 @@
+element {
+    --main-color: rgb(29, 16, 63);
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(12, 73, 40);
+}
+
+.wrap {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: rgb(236, 236, 236); */
+}
+
+.wrap-btn {
+    flex-direction: row;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: 2px solid;
+    border-color: var(--main-color);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--main-color);
+
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(241, 241, 241);
+}
+
+.btn-start {
+    margin-right: 15px;
+}
+
+
+.game-board {
+    border: 3px solid;
+    border-color: var(--main-color);
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    color: var(--main-color);
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.cell {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 3px solid;
+    border-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    transition: all 0.2s ease;
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.wrap-info {
+    display: flex;
+    margin-top: 10px;
+}
