@@ -27,8 +27,8 @@ body {
     border-radius: 5px;
     background-color: #fff;
     color: var(--main-color);
-
 }
+
 .btn:hover {
     cursor: pointer;
     background-color: rgb(241, 241, 241);
@@ -37,6 +37,28 @@ body {
 .btn-start {
     margin-right: 15px;
 }
+
+.wrap-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.val-moves {
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: rgb(177, 177, 177);
+}
+
+.val-time {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+
+
 
 
 .game-board {
@@ -47,6 +69,26 @@ body {
     color: var(--main-color);
     margin-top: 20px;
     position: relative;
+    margin-bottom: 40px;
+}
+
+.win-message {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:  60px;
+    color: #fff;
+    display: none;
+}
+
+.win-message-on {
+    display: block;
+    text-align: center;
 }
 
 
@@ -68,7 +110,26 @@ body {
     cursor: pointer;
 }
 
-.wrap-info {
+
+.wrap-check {
     display: flex;
-    margin-top: 10px;
+    margin: 20px 0px 10px;
+}
+
+.input-radio {
+    margin-left: 15px;
+    appearance: none;
+}
+
+.label-radio {
+    color: rgb(177, 177, 177);
+}
+
+.label-radio:hover {
+    cursor: pointer;
+}
+
+.input-radio:checked + .label-radio{
+    color: rgb(12, 73, 40);
+    text-decoration: underline;
 }

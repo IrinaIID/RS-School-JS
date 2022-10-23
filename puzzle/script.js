@@ -36,7 +36,7 @@ btnResult.innerHTML = 'Results'
 btnResult.className = 'btn';
 wrapBtn.append(btnResult);
 
-//Time / moves
+// Moves / time
 const wrapInfo = document.createElement('div');
 wrapInfo.className = 'wrap-info';
 wrap.append(wrapInfo);
@@ -44,6 +44,20 @@ wrap.append(wrapInfo);
 const txtMoves = document.createElement('div');
 txtMoves.textContent = 'Moves:'
 wrapInfo.append(txtMoves);
+
+const valueMoves = document.createElement('div');
+valueMoves.className = 'val-moves'
+valueMoves.innerHTML = 0;
+wrapInfo.append(valueMoves);
+
+const txtTime = document.createElement('div');
+txtTime.textContent = 'Time'
+wrapInfo.append(txtTime);
+
+const valueTime = document.createElement('div');
+valueTime.className = 'val-time'
+valueTime.innerHTML = '00:00';
+wrapInfo.append(valueTime);
 
 
 // Game board
@@ -53,14 +67,40 @@ gameBoard.style.width = `${sizeCell * sizeBoard}px`;
 gameBoard.style.height = `${sizeCell * sizeBoard}px`;
 wrap.append(gameBoard);
 
+// Check size
+const wrapChecks = document.createElement('div');
+wrapChecks.className = 'wrap-check';
+wrap.append(wrapChecks);
+
+const textSize = document. createTextNode('Size:');
+wrapChecks.append(textSize);
+
+for (let i = 1; i < 7; i++) {
+    const inputSize = document.createElement('input');
+    inputSize.type = 'radio';
+    inputSize.name = 'size';
+    inputSize.className = 'input-radio';
+    inputSize.id = `${i}`
+    inputSize.value = i + 2;
+
+    const labelSize = document.createElement('label')
+    labelSize.htmlFor = `${i}`;
+    labelSize.className = 'label-radio'
+    labelSize.append(document.createTextNode(`${i + 2}x${i + 2}`));
+
+    wrapChecks.append(inputSize);
+    wrapChecks.append(labelSize);
+}
+
+
+const allRadios = document.querySelectorAll('.input-radio');
+allRadios[1].checked = true;
+
+console.log(typeof allRadios[0].value)
+console.log(allRadios[2].value)
+
 
 // Create cells
-
-const empty = {
-    value: 0,
-    bottom: 0,
-    right: 0
-}
 
 const arrCells = [];
 
@@ -90,12 +130,18 @@ function moveCell(index) {
     cell.bottom = valueEmptyBottom;
 
     const win = arrCells.every(elem => {
-        return elem.value === 16 - (elem.bottom * sizeBoard + elem.right);
+        return elem.value === sizeBoard * sizeBoard - (elem.bottom * sizeBoard + elem.right);
     })
 
     if(win) {
         console.log('win');
     }
+}
+
+const empty = {
+    value: 0,
+    bottom: 0,
+    right: 0
 }
 
 
@@ -127,15 +173,22 @@ for (let i = 1; i < sizeBoard * sizeBoard; i++) {
     })
 }
 
+
+let game = false;
 // Start
 
-btnStart.addEventListener('click', function() {
+function start() {
     const cells = document.querySelectorAll('.cell');
     const arrCells = Array.from(cells);
     const numbersInBoard = shuffle(numbersGame);
     for(let i = 0; i < arrCells.length; i++) {
         arrCells[i].innerHTML = numbersInBoard[i];
     }
+    game = true;
+}
+
+btnStart.addEventListener('click', function() {
+    start();
 });
 
 
