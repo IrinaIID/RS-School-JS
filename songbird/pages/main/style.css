@@ -104,7 +104,6 @@
   align-items: center;
   padding: 0px 40px;
   margin-top: 200px;
-  /* background: linear-gradient(0deg, rgba(22, 37, 16, 0.92) 0%, rgba(22, 37, 16, 0.88) 50.54%, rgba(22, 37, 16, 0) 100%); */
 }
 
 .footer-p {
@@ -121,6 +120,10 @@
   color: #fff;
   text-decoration: none;
   margin-right: 20px;
+}
+
+.a-text-github:hover {
+  color: var(--accent-color);
 }
 
 @media (max-width: 930px) {
