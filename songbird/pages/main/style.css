@@ -1,0 +1,214 @@
+:root {
+  --main-color-text: #fff;
+  --accent-color: #d9ff00;
+}
+
+.body {
+  background: url(../../assets/img/bg-bird.jpg) no-repeat;
+  background-size: cover;
+  color: var(--main-color-text);
+  font: 400 16px Montserrat, sans-serif;
+}
+
+.header {
+  max-width: 1480px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.ul-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.ul-navigation li {
+  list-style-type: none;
+  margin-left: 70px;
+}
+
+.ul-navigation li a {
+  text-decoration: none;
+  color: var(--main-color-text);
+}
+
+.ul-navigation li a:hover {
+  color: var(--accent-color)
+}
+
+.img-logo-github:hover {
+  transform: scale(1.1);
+}
+
+.main {
+  max-width: 1480px;
+  margin: auto;
+  margin-top: 80px;
+  padding: 0 40px;
+}
+
+
+.block-description {
+  background: rgba(105, 105, 105, 0.3);
+  border-radius: 20px;
+  max-width: 1000px;
+}
+
+.description {
+  padding: 66px 74px;
+}
+
+.h1 {
+  color: var(--main-color-text);
+  font: 400 32px Montserrat, sans-serif;
+  margin-bottom: 40px;
+}
+
+.description-article,
+.description-p {
+  max-width: 840px;
+  font-size: 24px;
+}
+
+.btn-start {
+  width: 300px;
+  height: 60px;
+  border: 0;
+  border-radius: 20px;
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 28px;
+  color: #291f1f;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-start:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #1A2914;
+  font-size: 32px;
+}
+
+.footer {
+  height: 80px;
+  max-width: 1480px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+  margin-top: 200px;
+}
+
+.footer-p {
+  margin: 0px;
+}
+
+.block-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-text-github {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.a-text-github:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 930px) {
+
+  .ul-navigation li {
+    margin-left: 40px;
+  }
+
+  .ul-navigation {
+    padding-left: 0px;
+  }
+
+}
+
+@media (max-width: 770px) {
+
+  .ul-navigation .li-about-game {
+    margin-left: 0px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .main {
+    margin-top: 0px;
+  }
+
+  .footer {
+    margin-top: 120px;
+  }
+
+  .description {
+    padding: 47px 74px;
+  }
+
+
+
+}
+
+@media (max-width: 560px) {
+
+  .img-logo-github-header {
+    display: none;
+  }
+
+  .description-article,
+  .description-p {
+    font-size: 20px;
+  }
+
+  .description {
+    padding: 20px 20px;
+  }
+
+  .ul-navigation {
+    flex-direction: column;
+  }
+
+  .ul-navigation li {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  .btn-start {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .description-article,
+  .description-p {
+    font-size: 16px;
+  }
+
+  .footer {
+    height: 140px;
+    margin-top: 80px;
+    flex-direction: column;
+  }
+
+}
