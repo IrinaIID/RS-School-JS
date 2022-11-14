@@ -30,7 +30,7 @@
       <ul class="ul-navigation">
         <li><a href="../main/index.html">Об игре</a></li>
         <li><a href="index.html">Игра</a></li>
-        <li><a href="">Результаты</a></li>
+        <li><a href="../results/index.html">Результаты</a></li>
         <li><a href="">Галерея</a></li>
         <li><a href="https://github.com/IrinaIID"><img src="../../assets/icons/github-ico.png" alt="github" class="img-logo-github img-logo-github-header"></a></li>
       </ul>
@@ -40,38 +40,39 @@
     <div class="score-block">
       <p class="p-score">Счёт :</p>
       <p class="p-num-score">0</p>
+      <p class="p-num-question">Вопрос <span class="span-num-question">0</span> из 6</p>
     </div>
     <section class="section-category-selection">
-      <button class="btn-category-selection">Подборка 1</button>
-      <button class="btn-category-selection">Подборка 2</button>
-      <button class="btn-category-selection">Подборка 3</button>
-      <button class="btn-category-selection">Подборка 4</button>
-      <button class="btn-category-selection">Подборка 5</button>
+      <button class="btn-category-selection" value="0">Подборка 1</button>
+      <button class="btn-category-selection" value="1">Подборка 2</button>
+      <button class="btn-category-selection" value="2">Подборка 3</button>
+      <button class="btn-category-selection" value="3">Подборка 4</button>
+      <button class="btn-category-selection" value="4">Подборка 5</button>
     </section>
-    <section class="section-quistion">
+    <section class="section-question">
       <div class="question-content">
         <div class="img-question"></div>
         <div class="block-question">
           <p class="p-name-bird">*******</p>
           <div class="player">
             <div class="player-controls">
-              <button class="play player-icon play-btn"></button>
+              <button class="play player-icon play-btn play-btn-question"></button>
               <div class="sound-controls">
-                <img src="../../assets/icons/sound.png" alt="sound" class="sound-icon sound-on">
-                <img src="../../assets/icons/none-sound.png" alt="none-sound" class="sound-icon sound-off">
-                <div class="volume-slider">
-                  <div class="volume-percentage"></div>
+                <img src="../../assets/icons/sound.png" alt="sound" class="sound-icon sound-on sound-on-question">
+                <img src="../../assets/icons/none-sound.png" alt="none-sound" class="sound-icon sound-off sound-off-question">
+                <div class="volume-slider volume-slider-question">
+                  <div class="volume-percentage volume-percentage-question"></div>
                 </div>
               </div>
             </div>
             <div class="time-controls">
-              <div class="timeline">
-                <div class="progress"></div>
+              <div class="timeline timeline-question">
+                <div class="progress progress-question"></div>
               </div>
               <div class="player-time">
-                <div class="current-music-time">00:00</div>
-                <div class="divider">/</div>
-                <div class="music-length"></div>
+                <div class="current-music-time current-music-time-question">0:00</div>
+                <!-- <div class="divider">/</div>
+                <div class="music-length"></div> -->
               </div>
             </div>
           </div>
@@ -81,9 +82,9 @@
     <section class="section-choice">
       <div class="choice-content">
         <div class="block-choice-buttons">
-          <button class="btn-answer">пингвин</button>
-          <button class="btn-answer">Галка</button>
-          <button class="btn-answer">Козодой</button>
+          <button class="btn-answer"></button>
+          <button class="btn-answer"></button>
+          <button class="btn-answer"></button>
           <button class="btn-answer"></button>
           <button class="btn-answer"></button>
           <button class="btn-answer"></button>
@@ -95,32 +96,34 @@
               <p class="p-name-bird-choice">*******</p>
               <div class="player player-choice">
                 <div class="player-controls">
-                  <button class="play player-icon play-btn"></button>
+                  <button class="play player-icon play-btn play-btn-card"></button>
                   <div class="sound-controls">
-                    <img src="../../assets/icons/sound.png" alt="sound" class="sound-icon sound-on">
-                    <img src="../../assets/icons/none-sound.png" alt="none-sound" class="sound-icon sound-off">
-                    <div class="volume-slider">
-                      <div class="volume-percentage"></div>
+                    <img src="../../assets/icons/sound.png" alt="sound" class="sound-icon sound-on sound-on-card">
+                    <img src="../../assets/icons/none-sound.png" alt="none-sound" class="sound-icon sound-off sound-off-card">
+                    <div class="volume-slider volume-slider-card">
+                      <div class="volume-percentage volume-percentage-card"></div>
                     </div>
                   </div>
                 </div>
                 <div class="time-controls">
-                  <div class="timeline">
-                    <div class="progress"></div>
+                  <div class="timeline timeline-card">
+                    <div class="progress progress-card"></div>
                   </div>
                   <div class="player-time">
-                    <div class="current-music-time">00:00</div>
-                    <div class="divider">/</div>
-                    <div class="music-length"></div>
+                    <div class="current-music-time current-music-time-card">0:00</div>
+                    <!-- <div class="divider">/</div>
+                    <div class="music-length"></div> -->
                   </div>
                 </div>
               </div>
               <div class="choice-description">
-                <p>Вид:</p>
-                <p class="choice-description-p">description: 'Размеры буревестниковых разные. Самые маленькие из них в длину составляют до 25 см, самые большие - до 1 м, при размахе крыльев около 2 м. Существует поверье, что появление буревестника в воздухе предвещает бурю, о чем говорит само название птицы.',
-                </p>
+                <p class="p-card-species"></p>
+                <p class="choice-description-p"></p>
               </div>
             </div>
+          </div>
+          <div class="question-content-choice-2">
+            <p>Нажимай на play и угадывай голос птицы.<br>У тебя точно получится угадать!<br>Возможно, и спервой попытки!</p>
           </div>
         </div>
         <button class="btn-next"><img src="../../assets/icons/next-bird.png" alt="">Далее</button>
