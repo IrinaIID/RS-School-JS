@@ -247,16 +247,6 @@
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 .block-choice-buttons {
   /* display: flex; */
   flex-direction: column;
@@ -457,9 +447,6 @@
   }
 
 }
-
-
-
 
 .popup-win-all {
   position: absolute;
