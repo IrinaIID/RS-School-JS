@@ -17,12 +17,20 @@ const cardAboutBird = document.querySelector('.question-content-choice');
 const questionContent = document.querySelector('.question-content');
 const currentQuestion = document.querySelector('.span-num-question');
 
+const formRestart = document.querySelector('.form-restart');
+const checkedCategory = document.querySelector('.checked-category');
+
+
 allBtnCategories.forEach(btn => {
   btn.addEventListener('click', () => {
+    checkedCategory.textContent = btn.innerHTML;
+    checkedCategory.style.display = 'flex';
+    formRestart.style.display = 'block';
+
     allBtnCategories.forEach(elem => {
-      elem.classList.remove('btn-category-selection-checked');
+      elem.style.display = 'none';
     });
-    btn.classList.add('btn-category-selection-checked');
+
     numCategory = btn.value;
     arrPlayCategory = birdsData[numCategory];
     shuffle(arrPlayCategory);
@@ -37,6 +45,28 @@ allBtnCategories.forEach(btn => {
 });
 
 
+
+
+// allBtnCategories.forEach(btn => {
+//   btn.addEventListener('click', () => {
+//     allBtnCategories.forEach(elem => {
+//       elem.classList.remove('btn-category-selection-checked');
+//     });
+//     btn.classList.add('btn-category-selection-checked');
+//     numCategory = btn.value;
+//     arrPlayCategory = birdsData[numCategory];
+//     shuffle(arrPlayCategory);
+//     console.log(arrPlayCategory);
+//     questionContent.classList.add('question-content-on');
+//     greetingMessage.style.display = 'block';
+//     cardAboutBird.style.display = 'none';
+//     gameStart = false;
+//     currentQuestion.textContent = numCurrentQuestion;
+//     setCards();
+//   });
+// });
+
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -48,7 +78,7 @@ function shuffle(array) {
 }
 
 
- 
+
 
 
 
