@@ -1,0 +1,116 @@
+.main-gallery {
+  margin: auto;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(105, 105, 105, 0.3);
+}
+
+.bird-card {
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(29, 29, 29, 0.3);
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.text-main-gallery {
+  max-width: 95%;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(29, 29, 29, 0.3);
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.text-main-gallery {
+  font-size: 20px;
+}
+
+.btn-star-gallery {
+  margin: 20px 0px;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-right: 40px;
+}
+
+.block-description {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.player-gallery {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+
+  .block-description {
+    max-width: 900px;
+  }
+
+}
+
+@media (max-width: 1300px) {
+
+  .block-description {
+    max-width: 750px;
+  }
+
+}
+
+@media (max-width: 1160px) {
+
+  .block-description {
+    max-width: 600px;
+  }
+
+  .card-img {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+
+  .card-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .bird-card {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  .main-gallery {
+    padding: 40px 10px;
+  }
+
+}
+
+@media (max-width: 460px) {
+
+  .block-description {
+    padding: 5px;
+  }
+
+  .card-img {
+    margin: 10px 0px 10px 10px;
+  }
+
+  .bird-card {
+    padding: 0px;
+  }
+
+}

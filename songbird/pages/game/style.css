@@ -26,12 +26,17 @@
   margin-left: 10px;
 }
 
+.p-num-question {
+  margin-left: 20px;
+}
+
 .section-category-selection {
   width: 100%;
   font-display: flex;
 }
 
-.btn-category-selection {
+.btn-category-selection,
+.btn-restart-game {
   width: 19%;
   height: 40px;
   background: rgba(105, 105, 105, 0.3);
@@ -42,13 +47,39 @@
   font-size: 18px;
 }
 
+.btn-category-selection-checked {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.btn-restart-game {
+  width: 200px;
+  margin: auto;
+}
+
+.checked-category {
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  background: rgba(105, 105, 105, 0.3);
+  margin-bottom: 10px;
+}
+
 .btn-category-selection:hover,
-.btn-answer:hover {
+.btn-answer:hover,
+.btn-restart-game:hover {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.5);
 }
 
-.section-quistion,
+.form-restart,
+.checked-category {
+  display: none;
+}
+
+.section-question,
 .section-choice {
   width: 100%;
   margin-top: 20px;
@@ -56,9 +87,17 @@
   background: rgba(105, 105, 105, 0.3);
 }
 
-.question-content,
 .choice-content {
   margin: 20px;
+  display: flex;
+}
+
+.question-content {
+  margin: 20px;
+  display: none;
+}
+
+.question-content-on {
   display: flex;
 }
 
@@ -73,17 +112,16 @@
 
 .block-question {
   width: 60%;
+  display: none;
+}
+
+.block-question {
+  display: block;
 }
 
 .p-name-bird {
   font-size: 32px;
 }
-
-
-
-
-
-
 
 .player-controls {
   display: flex;
@@ -112,7 +150,6 @@
 }
 
 .play-item::before {
-  content: "\2713";
   position: absolute;
   left: 0;
   top: 2px;
@@ -162,11 +199,12 @@
 .timeline {
   background: rgba(255, 255, 255, 0.315);
   width: 100%;
-  height: 3px;
+  height: 7px;
   position: relative;
   cursor: pointer;
   box-shadow: 0 2px 10px 0 #0008;
   margin-bottom: 5px;
+  border-radius: 5px;
 }
 
 .progress {
@@ -174,6 +212,7 @@
     width: 0%;
     height: 100%;
     transition: 0.25s;
+    border-radius: 5px;
 }
 
 .player-time {
@@ -185,11 +224,6 @@
   display: none;
 }
 
-/* .sound-controls {
-  margin-left: 10px;
-  text-align: start;
-} */
-
 .sound-controls {
   position: relative;
 }
@@ -199,7 +233,8 @@
   position: relative;
   z-index: 2;
   width: 100px;
-  height: 3px;
+  height: 7px;
+  border-radius: 5px;
   background: rgba(255, 255, 255, 0.315);
   box-shadow: 0 2px 10px 0 #0008;
   transition: .25s;
@@ -213,27 +248,19 @@
   height: 100%;
   width: 75%;
   opacity: 0.8;
+  border-radius: 5px;
+
 }
 
 .sound-icon {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
 .block-choice-buttons {
-  display: flex;
   flex-direction: column;
   margin-right: 20px;
   flex-wrap: wrap;
+  display: none;
 }
 
 .btn-answer {
@@ -248,6 +275,14 @@
   margin-bottom: 10px;
 }
 
+.btn-answer-right {
+  border: 3px solid rgba(19, 116, 23, 0.699);
+}
+
+.btn-answer-wrong {
+  border: 3px solid rgba(173, 42, 42, 0.699);
+  cursor: context-menu;
+}
 
 .block-about-bird {
   width: 100%;
@@ -256,14 +291,18 @@
   background: rgba(29, 29, 29, 0.3);
 }
 
-
 .block-question-choice {
   width: 500px;
 }
 
 .question-content-choice {
   margin: 0px;
-  /* display: none; */
+  display: none;
+}
+
+.question-content-choice-2 {
+  font-size: 24px;
+  display: none;
 }
 
 .img-question-choice {
@@ -291,12 +330,12 @@
   margin-left: 20px;
 }
 
-@media (max-width: 1280px) {
+.btn-next-active {
+  background: rgba(250, 255, 0, 0.7);
+  cursor: pointer;
+}
 
-  /* .img-question-choice {
-    width: 160px;
-    height: 160px;
-  } */
+@media (max-width: 1280px) {
 
   .choice-content {
     flex-direction: column;
@@ -342,7 +381,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between; */
   }
 
   .btn-category-selection {
@@ -395,6 +433,11 @@
     flex-direction: column;
   }
 
+  .question-content-choice-2 {
+    font-size: 18px;
+}
+
+
 }
 
 @media (max-width: 410px) {
@@ -408,3 +451,70 @@
   }
 
 }
+
+.popup-win-all {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.678);
+  display: none;
+}
+
+.popup-win-all-on {
+  display: block;
+}
+
+.popup-win {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  border: 4px solid #DBFF00;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1d201d;
+  font-size: 20px;
+}
+
+.popup-span-score {
+  font-weight: 600;
+}
+
+.popup-text-result {
+  max-width: 400px;
+  font-size: 16px;
+}
+
+.btn-start-popup {
+  font-size: 24px;
+}
+
+.a-back-to-main {
+  color: #1d201d;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+@media (max-width: 460px) {
+
+  .btn-start-popup {
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 595px) {
+
+  .img-question {
+    width: 60px;
+    height: 60px;
+  }
+
+}
+
+
