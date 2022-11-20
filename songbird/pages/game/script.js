@@ -1,8 +1,6 @@
 import birdsData from './birdinfo.js';
 import winDescription from './win-description.js'
 
-console.log(winDescription)
-
 // check category
 
 let arrPlayCategory = [];
@@ -34,7 +32,6 @@ allBtnCategories.forEach(btn => {
     numCategory = btn.value;
     arrPlayCategory = birdsData[numCategory];
     shuffle(arrPlayCategory);
-    console.log(arrPlayCategory);
     questionContent.classList.add('question-content-on');
     greetingMessage.style.display = 'block';
     cardAboutBird.style.display = 'none';
@@ -43,28 +40,6 @@ allBtnCategories.forEach(btn => {
     setCards();
   });
 });
-
-
-
-
-// allBtnCategories.forEach(btn => {
-//   btn.addEventListener('click', () => {
-//     allBtnCategories.forEach(elem => {
-//       elem.classList.remove('btn-category-selection-checked');
-//     });
-//     btn.classList.add('btn-category-selection-checked');
-//     numCategory = btn.value;
-//     arrPlayCategory = birdsData[numCategory];
-//     shuffle(arrPlayCategory);
-//     console.log(arrPlayCategory);
-//     questionContent.classList.add('question-content-on');
-//     greetingMessage.style.display = 'block';
-//     cardAboutBird.style.display = 'none';
-//     gameStart = false;
-//     currentQuestion.textContent = numCurrentQuestion;
-//     setCards();
-//   });
-// });
 
 
 function shuffle(array) {
@@ -76,11 +51,6 @@ function shuffle(array) {
   }
   return array;
 }
-
-
-
-
-
 
 
 //  audioplyer-Question
@@ -133,7 +103,6 @@ timelineQuestion.addEventListener('click', e => {
 }, false);
 
 
-
 setInterval(() => {
     progressQuestion.style.width = audioQuestion.currentTime / audioQuestion.duration * 100 + '%';
 
@@ -149,8 +118,7 @@ function getTimeCodeFromNum(num) {
     seconds -= minutes * 60;
 
     return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
-  }
-
+}
 
 
 // sound on/off
@@ -195,7 +163,6 @@ function setCards() {
     arrBtnAnswers[num-1].textContent = `${info.name}`
   })
 }
-
 
 
 // right/wrong answer
@@ -254,7 +221,6 @@ arrBtnAnswers.forEach(btnAnswer => {
       }
       questionComplete = true;
       currentScoreQuestion = 5;
-      console.log(currentScoreQuestion);
     } else {
       fillBirdCard(btnAnswer);
       if (questionComplete === false) {
@@ -269,7 +235,6 @@ arrBtnAnswers.forEach(btnAnswer => {
   })
 
 })
-
 
 
 // btn Next - next question
@@ -303,7 +268,6 @@ function stopAudio() {
     playBtnCard.classList.toggle('pause');
   }
 }
-
 
 
 const popUpAll = document.querySelector('.popup-win-all');
@@ -354,35 +318,7 @@ function startNextQuestion() {
   }
 }
 
-nextBtn.addEventListener('click', startNextQuestion)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nextBtn.addEventListener('click', startNextQuestion);
 
 
 // player birdCard
@@ -411,11 +347,6 @@ function playAudioCard() {
 
 
 playBtnCard.addEventListener('click', playAudioCard);
-
-// ?????????
-// audioQuestion.addEventListener('ended', () => {
-//   playBtnQestion.classList.add('play');
-// });
 
 
 // smart player
@@ -472,4 +403,3 @@ volumeSliderCard.addEventListener('click', e => {
   const volumePercentageCard = document.querySelector('.volume-percentage-card');
   volumePercentageCard.style.width = newVolume * 100 + '%';
 }, false);
-

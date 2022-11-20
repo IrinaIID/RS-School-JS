@@ -79,8 +79,6 @@
   display: none;
 }
 
-
-
 .section-question,
 .section-choice {
   width: 100%;
@@ -103,8 +101,6 @@
   display: flex;
 }
 
-
-
 .img-question {
   width: 216px;
   height: 216px;
@@ -126,12 +122,6 @@
 .p-name-bird {
   font-size: 32px;
 }
-
-
-
-
-
-
 
 .player-controls {
   display: flex;
@@ -160,7 +150,6 @@
 }
 
 .play-item::before {
-  /* content: "\2713"; */
   position: absolute;
   left: 0;
   top: 2px;
@@ -235,11 +224,6 @@
   display: none;
 }
 
-/* .sound-controls {
-  margin-left: 10px;
-  text-align: start;
-} */
-
 .sound-controls {
   position: relative;
 }
@@ -273,7 +257,6 @@
 }
 
 .block-choice-buttons {
-  /* display: flex; */
   flex-direction: column;
   margin-right: 20px;
   flex-wrap: wrap;
@@ -301,15 +284,12 @@
   cursor: context-menu;
 }
 
-
-
 .block-about-bird {
   width: 100%;
   padding: 20px;
   border-radius: 20px;
   background: rgba(29, 29, 29, 0.3);
 }
-
 
 .block-question-choice {
   width: 500px;
@@ -357,11 +337,6 @@
 
 @media (max-width: 1280px) {
 
-  /* .img-question-choice {
-    width: 160px;
-    height: 160px;
-  } */
-
   .choice-content {
     flex-direction: column;
   }
@@ -406,7 +381,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: space-between; */
   }
 
   .btn-category-selection {
@@ -533,7 +507,6 @@
   }
 
 }
-
 
 @media (max-width: 595px) {
 

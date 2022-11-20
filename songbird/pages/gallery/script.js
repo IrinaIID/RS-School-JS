@@ -1,9 +1,21 @@
 import birdsData from '../game/birdinfo.js'
 
-console.log(birdsData[0])
 const arrAllDirds = birdsData.flat();
-console.log(arrAllDirds);
 const mainGallery = document.querySelector('.main-gallery');
+
+const textMainGallery = document.createElement('div');
+textMainGallery.className = 'text-main-gallery';
+textMainGallery.textContent = 'Добро пожаловать в галерею птиц! Смотри, слушай и начинай игру. А можешь создать свой птичий хор - просто запускай плеер тех птиц, которых хочешь услышать. Можно получить свмые неожиданные сочетания :-)'
+mainGallery.append(textMainGallery);
+
+const formStartGame = document.createElement('form');
+formStartGame.action = "../game/index.html";
+mainGallery.append(formStartGame);
+
+const btnStartGame = document.createElement('button');
+btnStartGame.className = 'btn-start btn-star-gallery';
+btnStartGame.textContent = 'Начать игру';
+formStartGame.append(btnStartGame);
 
 for (let i = 0; i < arrAllDirds.length; i++) {
 
@@ -18,7 +30,7 @@ for (let i = 0; i < arrAllDirds.length; i++) {
   birdCard.append(cardImg);
 
   const blockCardDescription = document.createElement('div');
-  blockCardDescription.classList = 'block-question-choice';
+  blockCardDescription.classList = 'block-description';
   birdCard.append(blockCardDescription);
 
   const cardNameBird = document.createElement('p');
@@ -26,59 +38,18 @@ for (let i = 0; i < arrAllDirds.length; i++) {
   cardNameBird.textContent = arrAllDirds[i].name;
   blockCardDescription.append(cardNameBird);
 
-  // const player = document.createElement('div');
-  // player.classList = 'player';
-  // blockCardDescription.append(player);
+  const playerGallery = document.createElement('audio');
+  playerGallery.setAttribute('controls', '');
+  playerGallery.src = arrAllDirds[i].audio;
+  blockCardDescription.append(playerGallery);
 
-  // const playerControls = document.createElement('div');
-  // player.classList = 'player-controls';
-  // player.append(playerControls);
+  const speciesBird = document.createElement('p');
+  speciesBird.className = 'description-bird';
+  speciesBird.textContent = `Вид: ${arrAllDirds[i].species}`;
+  blockCardDescription.append(speciesBird);
 
-  // const btnPlay = document.createElement('button');
-  // btnPlay.className = 'play player-icon play-btn';
-  // playerControls.append(btnPlay);
-
-  // const soundControls = document.createElement('div');
-  // soundControls.className = 'sound-controls';
-  // playerControls.append(soundControls);
-
-  // const imgSoundOn = document.createElement('img');
-  // imgSoundOn.className = 'sound-icon sound-on';
-  // imgSoundOn.src = '../../assets/icons/sound.png';
-  // soundControls.append(imgSoundOn);
-
-  // const imgSoundOff = document.createElement('img');
-  // imgSoundOff.className = 'sound-icon sound-off';
-  // imgSoundOff.src = '../../assets/icons/none-sound.png';
-  // soundControls.append(imgSoundOff);
-
-  // const volumeSlider = document.createElement('div');
-  // volumeSlider.classList = 'volume-slider';
-  // soundControls.append(volumeSlider);
-
-  // const volumePrecentage = document.createElement('div');
-  // volumePrecentage.className = 'volume-percentage';
-  // volumeSlider.append(volumePrecentage);
-
-  // const timeControls = document.createElement('div');
-  // timeControls.className = 'time-controls';
-  // player.append(timeControls);
-
-  // const timeLine = document.createElement('div');
-  // timeLine.className = 'timeline';
-  // timeControls.append(timeLine);
-
-  // const timeProgress = document.createElement('div');
-  // timeProgress.className = 'progress';
-  // timeLine.append(timeProgress);
-
-  // const playerTime = document.createElement('div');
-
-
+  const descriptionBird = document.createElement('p');
+  descriptionBird.className = 'description-bird';
+  descriptionBird.textContent = arrAllDirds[i].description;
+  blockCardDescription.append(descriptionBird);
 }
-
-
-// const cell = document.createElement('div');
-// cell.className = 'cell';
-// cell.style.width = `${sizeCell}px`
-// cell.style.height = `${sizeCell}px`
