@@ -212,6 +212,7 @@ arrBtnAnswers.forEach(btnAnswer => {
     if (btnAnswer.innerHTML === arrPlayCategory[numCurrentQuestion - 1].name) {
       nextBtn.classList.add('btn-next-active');
       btnAnswer.classList.add('btn-answer-right');
+      audioQuestion.pause();
       audioAnswerSound.src = '../../assets/sounds/sound-right.mp3';
       audioAnswerSound.play();
       fillBirdQuestion();
