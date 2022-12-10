@@ -1,8 +1,8 @@
 import './news.css';
-import { IArticle } from '../../types';
+import { Article } from '../../types';
 
 class News {
-    draw(data: IArticle[]) {
+    draw(data: Article[]) {
         const news = data.length >= 10 ? data.filter((_item, idx) => idx < 10) : data;
         console.log(data);
 
