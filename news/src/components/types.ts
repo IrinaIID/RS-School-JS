@@ -1,10 +1,10 @@
 import Sources from "./view/sources/sources";
 
-// export interface ResponseArticles {
-//   status: 'ok' | 'error';
-//   length: number;
-//   articles: Article[];
-// }
+export interface ResponseArticles {
+  status: 'ok' | 'error';
+  length: number;
+  articles: Article[];
+}
 
 export interface Article {
   source: {
@@ -20,10 +20,10 @@ export interface Article {
   content: string;
 }
 
-// export interface ResponseSources {
-//   status: 'ok' | 'error';
-//   sources: Source[];
-// }
+export interface ResponseSources {
+  status: 'ok' | 'error';
+  sources: Source[];
+}
 
 export interface Source {
   id: string;
