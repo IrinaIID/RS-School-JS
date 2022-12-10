@@ -34,3 +34,7 @@ export interface Source {
   language: string;
   country: string;
 }
+
+export type Options = {[key: string]: string}
+
+export type Callback = <T>(t: T) => void;
