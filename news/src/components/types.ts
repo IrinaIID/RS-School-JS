@@ -1,11 +1,5 @@
 import Sources from "./view/sources/sources";
 
-export interface ResponseArticles {
-  status: 'ok' | 'error';
-  length: number;
-  articles: Article[];
-}
-
 export interface Article {
   source: {
     id: string, // string | null
@@ -20,9 +14,10 @@ export interface Article {
   content: string;
 }
 
-export interface ResponseSources {
+export interface ResponseArticles {
   status: 'ok' | 'error';
-  sources: Source[];
+  length: number;
+  articles: Article[];
 }
 
 export interface Source {
@@ -33,6 +28,11 @@ export interface Source {
   category: string;
   language: string;
   country: string;
+}
+
+export interface ResponseSources {
+  status: 'ok' | 'error';
+  sources: Source[];
 }
 
 export type Options = {[key: string]: string}
