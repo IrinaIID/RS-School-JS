@@ -1,3 +1,11 @@
+.news {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .news__item {
     display: flex;
     flex-direction: column;
@@ -54,7 +62,7 @@
 
 .news__item .news__description {
     padding: 1rem;
-    background: #fff;
+    background: #f0f0f0;
     position: relative;
     z-index: 1;
 }

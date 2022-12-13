@@ -1,6 +1,6 @@
 body {
-    color: #fff;
-    background: #17181c;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
     font-family: sans-serif;
 }
 
@@ -9,15 +9,29 @@ header {
 }
 
 header h1 {
+    color: #227697;;
     font-size: 40px;
     font-weight: 800;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 800px) {
+
+    .main {
+      display: block;
+    }
+
 }
 
 footer {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer .copyright {
     font-size: 14px;
@@ -32,4 +46,9 @@ footer .copyright a:hover {
 }
 footer .copyright:before {
     content: '©';
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #444;
 }
