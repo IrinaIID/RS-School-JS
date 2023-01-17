@@ -1,8 +1,113 @@
-body {
-  background-color: bisque;
+:root {
+  --main-bg-color: rgb(221, 221, 221);
+  --text-color: rgb(104, 104, 104);
+  --choice-color: rgb(170, 170, 170);
+  --accent-color: rgb(10, 111, 158);
 }
 
-.ff {
-  width: 300px;
-  fill: rgb(34, 172, 126);
+.body {
+  background-color: var(--main-bg-color);
+  color: var(--text-color)
+}
+
+.header-btn {
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.header-btn:hover,
+.btn-controls:hover,
+.btn-pagination:hover {
+  cursor: pointer;
+  background-color: var(--choice-color)
+}
+.header-btn-active {
+  background-color: var(--choice-color)
+
+}
+
+.main {
+  margin-top: 30px;
+}
+
+.main-garage {
+  display: none;
+}
+
+/* .main-winners {
+  display: none;
+} */
+
+.block-controls-create,
+.block-controls-update {
+  display: flex;
+  align-items: center;
+}
+
+.input-name-auto {
+  height: 20px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 0px 5px;
+}
+
+.btn-controls,
+.btn-pagination {
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 3px 10px;
+}
+
+.block-controls-game-bnts {
+  margin-top: 5px;
+}
+
+.btn-controls-game {
+  margin-left: 5px;
+  padding: 5px 15px;
+}
+
+.btn-controls-race {
+  margin-left: 0px;
+}
+
+.main-block-info {
+  display: flex;
+  margin-top: 25px;
+}
+
+.p-info-count-cars,
+.p-info-count-winners,
+.p-info-count-page {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.p-info-count-page {
+  margin-left: 20px;
+}
+
+.span-info-count-cars,
+.span-info-count-winners,
+.span-info-count-page {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.main-block-pagination {
+  margin-top: 20px;
+}
+
+.btn-pagination-garage-prev,
+.btn-pagination-winners-prev {
+  margin-left: 0px;
+}
+
+.block-tabel-winners {
+  margin-top: 20px;
 }
