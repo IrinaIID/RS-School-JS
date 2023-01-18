@@ -33,13 +33,9 @@
   margin-top: 30px;
 }
 
-.main-garage {
+.main-winners {
   display: none;
 }
-
-/* .main-winners {
-  display: none;
-} */
 
 .block-controls-create,
 .block-controls-update {
