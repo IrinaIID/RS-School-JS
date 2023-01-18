@@ -20,7 +20,9 @@
 
 .header-btn:hover,
 .btn-controls:hover,
-.btn-pagination:hover {
+.btn-pagination:hover,
+.btn-game:hover,
+.btn-car-active:hover {
   cursor: pointer;
   background-color: var(--choice-color)
 }
@@ -106,4 +108,55 @@
 
 .block-tabel-winners {
   margin-top: 20px;
+}
+
+.block-race-trak {
+  width: 100%;
+  border-bottom: 2px dotted var(--text-color);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.game-car-controls {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.p-game-car-name {
+  margin: 0px;
+}
+
+.btn-game,
+.btn-car {
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.btn-game-remove {
+  margin: 0px 5px;
+}
+
+.track-line {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-flag {
+  position: absolute;
+  right: 8%;
+}
+
+.block-car-on-track {
+  display: flex;
+  align-items: center;
+}
+
+.btn-car-b {
+  margin-left: 5px;
+}
+
+.btn-car-active {
+  background-color: var(--accent-color);
 }
