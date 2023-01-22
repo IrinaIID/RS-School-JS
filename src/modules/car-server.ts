@@ -22,7 +22,11 @@ export class Server {
     return data;
   }
 
-
+  async getCar(id: number) {
+    const response = await fetch(`${this.baseUrl}${this.path.garage}/${id}`);
+    const data = await response.json();
+    return data;
+  }
 
   async addCar(car: DataCar) {
     const response = await fetch(`${this.baseUrl}${this.path.garage}`, {
@@ -35,6 +39,28 @@ export class Server {
 
     const carCreated: DataCar = await response.json();
     return carCreated;
+  }
+
+  async removeCar(id: number) {
+    const response = await fetch(`${this.baseUrl}${this.path.garage}/${id}`, {
+      method: 'DELETE',
+    });
+    const carDeleted = await response.json();
+
+    return carDeleted;
+  }
+
+  async updateCar(id: number, data: DataCar) {
+    const response = await fetch(`${this.baseUrl}${this.path.garage}/${id}`, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    const car = await response.json();
+
+    return car;
   }
 
 

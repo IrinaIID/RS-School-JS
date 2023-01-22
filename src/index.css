@@ -114,7 +114,7 @@
   width: 100%;
   border-bottom: 2px dotted var(--text-color);
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .game-car-controls {
@@ -148,7 +148,7 @@
   right: 8%;
 }
 
-.block-car-on-track {
+.block-car-on-trak {
   display: flex;
   align-items: center;
 }
@@ -158,5 +158,5 @@
 }
 
 .btn-car-active {
-  background-color: var(--accent-color);
+  background-color: var(--choice-color);
 }

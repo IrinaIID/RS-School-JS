@@ -1,26 +1,24 @@
-import './index.css'
-import './modules/change-views'
-import './modules/create-car'
-import './modules/controls'
+import './index.css';
+import './modules/change-views';
+import './modules/create-car';
+import './modules/controls';
+// import { Server } from './modules/car-server';
+// import { DataCar } from './modules/interfaces'
+// import { createCarSvg } from './modules/create-car-svg';
+import { renderCarsFirstLoad } from './modules/render-cars';
+import { BtnControls } from './modules/create-car';
 
+// const server = new Server;
+// const btnControls = new BtnControls;
 
 // const carSvg = require('svg-inline-loader?classPrefix!./assets/car.svg');
+const btnControls = new BtnControls;
 
-// function createElement(
-//   parent: HTMLElement | Element,
-//   tag: string,
-//   className?: string,
-//   content?: string | number | HTMLElement
-// ) {
-//   const element = document.createElement(tag);
-//   if (className) { element.className = className }
-//   if (content) { element.textContent = content.toString() }
-//   parent.append(element);
-//   return element
-// }
+renderCarsFirstLoad();
+btnControls.showCoutCars();
 
 
-
+// const btnCreateCar = <HTMLButtonElement>document.querySelector('.btn-controls-create');
 
 
 
