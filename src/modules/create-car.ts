@@ -1,6 +1,19 @@
-import { Server } from "./car-server";
+import { Server } from './car-server';
+import { CAR_BRANDS_MODELS } from '../data/models';
 
 const server = new Server;
+
+function getRandomNum(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function getRandomColor() {
+  const r = Math.floor(Math.random() * (256));
+  const g = Math.floor(Math.random() * (256));
+  const b = Math.floor(Math.random() * (256));
+  return `#${r.toString(16)}${g.toString(16)}${b.toString(16)}`
+}
+
 
 export class BtnControls {
 
@@ -40,10 +53,25 @@ export class BtnControls {
     pCount.textContent = arrCars.length.toString();
   }
 
-  // async generateCars() {
-  //   const arrCars = await server.getAllCars();
+  async generateCars() {
+    if (this.idForCar === 0) {
+      const arrCars = await server.getAllCars();
+      if (arrCars.length > 0) {
+        this.idForCar = await arrCars[arrCars.length - 1].id;
+      } else {
+        this.idForCar = 0;
+      }
+    }
 
-  // }
+    this.idForCar = this.idForCar + 1;
+    let numBrand = getRandomNum(0, CAR_BRANDS_MODELS.length - 1);
+    let numModel = getRandomNum(0, CAR_BRANDS_MODELS[numBrand].models.length - 1);
+
+    return {
+      name: `${CAR_BRANDS_MODELS[numBrand].brand} ${CAR_BRANDS_MODELS[numBrand].models[numModel]}`,
+      color: getRandomColor(),
+      id: this.idForCar
+    }
+  }
 
 }
-

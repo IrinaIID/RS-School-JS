@@ -77,12 +77,11 @@ btnUpdate.addEventListener('click', () => {
 const btnGenerateCars = <HTMLButtonElement>document.querySelector('.btn-controls-generate-cars');
 btnGenerateCars.addEventListener('click', () => {
   for (let i = 0; i < 100; i++) {
-    async function fff() {
-      const carsCreated = await btnControls.createCar();
+    async function generateNewCar() {
+      const carsCreated = await btnControls.generateCars();
       server.addCar(carsCreated);
     }
-
-    fff()
+    generateNewCar();
   }
     const gameBoard = <HTMLElement>document.querySelector('.main-block-game-board');
     gameBoard.innerHTML = '';

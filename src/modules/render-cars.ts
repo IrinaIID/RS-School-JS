@@ -48,14 +48,13 @@ export function drawCar(car: DataCar) {
 }
 
 export async function renderCarsFirstLoad() {
-  
+
   const allCarsServer = await server.getAllCars();
   allCarsServer.forEach((car: DataCar) => {
     drawCar(car);
   });
 
 }
-
 
 export async function updateDrawCar(id: number) {
   server.getCar(id).then((data) => {
